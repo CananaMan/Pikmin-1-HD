@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/PostProcessing/Scenes/ImpactSite.unity
+- path: Assets/Test/Game Assets/Scenes/GameScene.unity
   isLoaded: 1
   isActive: 1

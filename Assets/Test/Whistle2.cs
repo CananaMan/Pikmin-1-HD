@@ -71,6 +71,7 @@ public class Whistle2 : MonoBehaviour
             Debug.Log(player.transform.position.y);
             Debug.Log("Groundhit Distance " + groundHit.distance + 0.3f);
         }
+        
         /*if (Physics.Raycast(gameObject.transform.position, Vector3.up, out aboveHit))
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + aboveHit.distance, transform.localPosition.z); // if anything above it make sure its that height

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 159344344}
-  m_IndirectSpecularColor: {r: 0.13273221, g: 0.19769496, b: 0.21047877, a: 1}
+  m_IndirectSpecularColor: {r: 0.13301972, g: 0.20093538, b: 0.21628946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -228,7 +228,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -246,8 +246,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73106038}
-  m_LocalRotation: {x: -0.14917251, y: -0.6890554, z: 0.22671986, w: -0.67197347}
-  m_LocalPosition: {x: -0.08461126, y: 5.3889203, z: 0.2530903}
+  m_LocalRotation: {x: 0.13016032, y: -0.51589525, z: 0.13373815, w: 0.8360769}
+  m_LocalPosition: {x: 9.405775, y: 2.146482, z: -5.0389695}
   m_LocalScale: {x: 0.033333343, y: 0.03333333, z: 0.03333334}
   m_Children: []
   m_Father: {fileID: 1083216438}
@@ -2019,7 +2019,7 @@ SpriteRenderer:
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 0
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
@@ -2048,7 +2048,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
