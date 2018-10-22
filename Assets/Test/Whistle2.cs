@@ -4,8 +4,8 @@ using System.Collections;
 public class Whistle2 : MonoBehaviour
 {
     // Settables
-    private float diameterFull = 5f; // Blow me.
-    private float maxDistanceFromPlayer = 9f;
+    public float diameterFull = 5f; // Blow me.
+    public float maxDistanceFromPlayer = 9f;
     // References
     private Player player;
     // Properties
@@ -68,7 +68,7 @@ public class Whistle2 : MonoBehaviour
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
         }
-        if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
+        if (Physics.Raycast(reticuleSprite.gameObject.transform.position, Vector3.up, out groundHit))
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.1f, transform.localPosition.z);
         }

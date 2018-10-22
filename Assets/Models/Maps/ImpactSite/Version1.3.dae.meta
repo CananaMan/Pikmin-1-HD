@@ -13,6 +13,9 @@ ModelImporter:
     100014: //RootNode
     100016: Camera_001 1
     100018: Lamp_001
+    100020: Camera_001_001
+    100022: Cube
+    100024: Lamp_001 1
     400000: Camera
     400002: Camera_001
     400004: Lamp
@@ -23,9 +26,13 @@ ModelImporter:
     400014: //RootNode
     400016: Camera_001 1
     400018: Lamp_001
+    400020: Camera_001_001
+    400022: Cube
+    400024: Lamp_001 1
     2000000: Camera
     2000002: Camera_001
     2000004: Camera_001 1
+    2000006: Camera_001_001
     2100000: m11_001
     2100002: m4_001
     2100004: m19_001
@@ -50,122 +57,135 @@ ModelImporter:
     2300000: Object
     2300002: Object_001
     2300004: The_Impact_Site
+    2300006: Cube
     3300000: Object
     3300002: Object_001
     3300004: The_Impact_Site
+    3300006: Cube
     4300000: The_Impact_Site
     4300002: Object
     4300004: Object_001
+    4300006: Cube
+    6400000: Cube
+    6400002: Object
+    6400004: Object_001
+    6400006: The_Impact_Site
     10800000: Lamp
     10800002: Sun
     10800004: Lamp_001
+    10800006: Lamp_001 1
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: a46307e56e4c3b34596b175ff2ce1e19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: m0_001
-    second: {fileID: 2100000, guid: a9b9f1c8fc937a342be8e309054757e3, type: 2}
+    second: {fileID: 2100000, guid: 99e02c88ee144e94391e61093290511b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m10_001
-    second: {fileID: 2100000, guid: 3ed37f7f8f51e764788f6370b4123412, type: 2}
+    second: {fileID: 2100000, guid: 653263d6d2d349b47a1c4451d5e5f9d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m11_001
-    second: {fileID: 2100000, guid: 2a47594e4c6124b42ad59099c03b296e, type: 2}
+    second: {fileID: 2100000, guid: 4f3adc1688507c6449248450e8f00638, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m12_001
-    second: {fileID: 2100000, guid: e1a915eac4a8ec64fb26545dee02cb87, type: 2}
+    second: {fileID: 2100000, guid: 223812dcb1280ef4092342a6df0cd50c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m13_001
-    second: {fileID: 2100000, guid: 967381f7bba0e6e4d965a92128e7a380, type: 2}
+    second: {fileID: 2100000, guid: f6eddb0c3d1a605409b477e2cb84f415, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m14_001
-    second: {fileID: 2100000, guid: 3bbec0cb98603cb4287cc922165ba5f9, type: 2}
+    second: {fileID: 2100000, guid: a0342b6d80684e64ea8621577850a12e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m15_001
-    second: {fileID: 2100000, guid: 896bd849488010046b41ae3793f2d2d8, type: 2}
+    second: {fileID: 2100000, guid: 181fbce39e9b6374a875524e3ab1f43a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m17_001
-    second: {fileID: 2100000, guid: 90303ad0f2d7c284e8a9685484cc4791, type: 2}
+    second: {fileID: 2100000, guid: cda770b36770b444b8304380f1bbb467, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m18_001
-    second: {fileID: 2100000, guid: 96807558c4656a046a408660692775b1, type: 2}
+    second: {fileID: 2100000, guid: f7bf94ac6f402e74c9b081a7807ce4b4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m19_001
-    second: {fileID: 2100000, guid: a6707f65df2465547ae5f48769268bc2, type: 2}
+    second: {fileID: 2100000, guid: 7a4320a4602e9024e8eef7b61ce3d4f5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m1_001
-    second: {fileID: 2100000, guid: 9d6955d77ee6ef444815ab40bcf16ab5, type: 2}
+    second: {fileID: 2100000, guid: 3a393145d473c1c40865f22b759dd3cc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m21_001
-    second: {fileID: 2100000, guid: de8025324a300324ca5bbda1e45e1ca1, type: 2}
+    second: {fileID: 2100000, guid: 3147e40eaf2ff2f4d940cbf843890cef, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m22_001
-    second: {fileID: 2100000, guid: f56e16f45ed4f614cbb15a3bef2b5f13, type: 2}
+    second: {fileID: 2100000, guid: f9421e96c912e7646bf56b3fe0176722, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m2_001
-    second: {fileID: 2100000, guid: c22ba78875402b24baa6355a235c6f32, type: 2}
+    second: {fileID: 2100000, guid: 6ad4c43b259b6824e974d127320f3e9f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m3_001
-    second: {fileID: 2100000, guid: d2713ad280bfa604a87f41a87d54f0c3, type: 2}
+    second: {fileID: 2100000, guid: edc24e48fded62b4589ba169cecb05cc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m4_001
-    second: {fileID: 2100000, guid: 3e49a51cbe0e8db41ba47b18c1502380, type: 2}
+    second: {fileID: 2100000, guid: 2e9798fd5ccb8c24cb8d37717b8a3198, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m5_001
-    second: {fileID: 2100000, guid: 031478ca96bf7b044b17a5fa678615a8, type: 2}
+    second: {fileID: 2100000, guid: bd30c171d5c22ef48b340877ccc10200, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m6_001
-    second: {fileID: 2100000, guid: b5102aac2be6ae047b1621530ae1c569, type: 2}
+    second: {fileID: 2100000, guid: a096b70a796a7e24ebfcb753c1c8e5fb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m7_001
-    second: {fileID: 2100000, guid: 20b57b4fd45edab4dbd3ce25ce6d06bd, type: 2}
+    second: {fileID: 2100000, guid: ca97ee6eb2fd5d045a815324c3647581, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m8_001
-    second: {fileID: 2100000, guid: acc8e118a616b034d8f210e74044d323, type: 2}
+    second: {fileID: 2100000, guid: 0804957457da1b74ca76d483cf2217f4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: m9_001
-    second: {fileID: 2100000, guid: d519aef485e5eac4abc99b5b0e226f5a, type: 2}
+    second: {fileID: 2100000, guid: ae4344fd5443de3448a7008ce191c80f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -197,17 +217,17 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
-    addColliders: 0
+    meshCompression: 3
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
-    keepQuads: 0
+    keepQuads: 1
     weldVertices: 1
     preserveHierarchy: 0
     indexFormat: 0
@@ -219,7 +239,7 @@ ModelImporter:
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 180
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
