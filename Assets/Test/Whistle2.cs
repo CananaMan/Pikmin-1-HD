@@ -4,8 +4,8 @@ using System.Collections;
 public class Whistle2 : MonoBehaviour
 {
     // Settables
-    public float diameterFull = 5f; // Blow me.
-    public float maxDistanceFromPlayer = 9f;
+    private float diameterFull = 5f; // Blow me.
+    private float maxDistanceFromPlayer = 9f;
     // References
     private Player player;
     // Properties
@@ -64,18 +64,14 @@ public class Whistle2 : MonoBehaviour
     void MoveToGroundY()
     {
         RaycastHit groundHit;
-        RaycastHit aboveHit;
         if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.position.x, player.transform.position.y - groundHit.distance, transform.localPosition.z);
-            Debug.Log(player.transform.position.y);
-            Debug.Log("Groundhit Distance " + groundHit.distance + 0.3f);
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
         }
-        
-        /*if (Physics.Raycast(gameObject.transform.position, Vector3.up, out aboveHit))
+        if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + aboveHit.distance, transform.localPosition.z); // if anything above it make sure its that height
-        }*/
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.1f, transform.localPosition.z);
+        }
     }
 
     void MoveFromInput()
