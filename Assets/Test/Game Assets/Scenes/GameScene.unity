@@ -218,6 +218,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240eb008c4ab5434c911147f98941468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distancesUp:
+  - 12
+  - 16
+  - 20
+  distancesAway:
+  - 10
+  - 16
+  - 20
   myTarget: {fileID: 855568641}
 --- !u!1 &85484274
 GameObject:
@@ -1218,6 +1226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c77a777dc3ee29409bb93b9b8cdbd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diameterFull: 5
+  maxDistanceFromPlayer: 9
 --- !u!1 &2082852257
 GameObject:
   m_ObjectHideFlags: 0

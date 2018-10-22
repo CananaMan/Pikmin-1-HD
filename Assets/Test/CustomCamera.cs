@@ -3,8 +3,8 @@ using System.Collections;
 
 public class CustomCamera : MonoBehaviour {
 	// Settables
-	private float[] distancesUp = new float[] { 20f, 26f, 40f }; // CLICK the right thumbstick to cycle through camera distances.
-	private float[] distancesAway = new float[] {15f, 25f, 35f }; // CLICK the right thumbstick to cycle through camera distances.
+	public float[] distancesUp = new float[] { 20f, 26f, 40f }; // CLICK the right thumbstick to cycle through camera distances.
+	public float[] distancesAway = new float[] {15f, 25f, 35f }; // CLICK the right thumbstick to cycle through camera distances.
 	private float positionEasing = 1f; // HIGHER means snappier. Lower is smoother.
 	private float inputRotationSensitivity = 0.025f; // the lower this value, the less we can rotate the camera with the right thumbstick.
 	// References

@@ -64,13 +64,17 @@ public class Whistle2 : MonoBehaviour
     void MoveToGroundY()
     {
         RaycastHit groundHit;
+        if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
+        {
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.1f, transform.localPosition.z);
+        }
         if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
         }
-        if (Physics.Raycast(reticuleSprite.gameObject.transform.position, Vector3.up, out groundHit))
+        if (Physics.Raycast(this.transform.position, Vector3.down, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.1f, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, reticuleSprite.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
         }
     }
 

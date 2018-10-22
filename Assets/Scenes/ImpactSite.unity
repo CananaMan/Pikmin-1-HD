@@ -477,6 +477,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240eb008c4ab5434c911147f98941468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distancesUp:
+  - 20
+  - 26
+  - 40
+  distancesAway:
+  - 15
+  - 25
+  - 35
   myTarget: {fileID: 34056168}
 --- !u!1 &96883590
 GameObject:
@@ -630,7 +638,7 @@ GameObject:
   - component: {fileID: 253268628}
   - component: {fileID: 253268630}
   - component: {fileID: 253268629}
-  - component: {fileID: 253268632}
+  - component: {fileID: 253268631}
   m_Layer: 0
   m_Name: The Impact Site
   m_TagString: Untagged
@@ -716,16 +724,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253268627}
   m_Mesh: {fileID: 4300004, guid: 92dcf73c9888e9f4cb29d3d004d6e413, type: 3}
---- !u!154 &253268632
-TerrainCollider:
+--- !u!64 &253268631
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253268627}
   m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_TerrainData: {fileID: 0}
-  m_EnableTreeColliders: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 92dcf73c9888e9f4cb29d3d004d6e413, type: 3}
 --- !u!1 &413121638
 GameObject:
   m_ObjectHideFlags: 0
