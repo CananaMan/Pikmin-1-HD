@@ -90,15 +90,15 @@ public class Whistle2 : MonoBehaviour
         RaycastHit groundHit;
         if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.2f, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.3f, transform.localPosition.z);
         }
         if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.2f, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.3f, transform.localPosition.z);
         }
         if (Physics.Raycast(this.transform.position, Vector3.down, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, this.transform.position.y - groundHit.distance + 0.2f, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, this.transform.position.y - groundHit.distance + 0.3f, transform.localPosition.z);
         }
     }
 

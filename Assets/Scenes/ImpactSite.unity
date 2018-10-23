@@ -1038,8 +1038,8 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 10.330139
+        value: 0.99876404
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1072,7 +1072,7 @@ MonoBehaviour:
     enabled: 1
     movementTransfer: 2
   sliding:
-    enabled: 1
+    enabled: 0
     slidingSpeed: 15
     sidewaysControl: 1
     speedControl: 0.4
@@ -1331,6 +1331,26 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23728964099602420, guid: a81436c066552f04d8ed15c2a71d94b0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: cec3e5bf3a9ccc744a9b4d43cb59b9d4, type: 2}
+    - target: {fileID: 23728964099602420, guid: a81436c066552f04d8ed15c2a71d94b0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 560a2b847cdb10d4b872a13d3413cc4f, type: 2}
+    - target: {fileID: 23728964099602420, guid: a81436c066552f04d8ed15c2a71d94b0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: d84ad37be2972354686339392e3716e8, type: 2}
+    - target: {fileID: 23728964099602420, guid: a81436c066552f04d8ed15c2a71d94b0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[16]
+      value: 
+      objectReference: {fileID: 2100000, guid: b1b39d7b480d6764cb2588e6fe61b2a6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a81436c066552f04d8ed15c2a71d94b0, type: 2}
   m_IsPrefabAsset: 0

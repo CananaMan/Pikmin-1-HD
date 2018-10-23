@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CustomCamera : MonoBehaviour {
+public class OlimarCam : MonoBehaviour {
 	// Settables
 	public float[] distancesUp = new float[] { 20f, 26f, 40f }, distancesAway = new float[] {15f, 25f, 35f }, FOVS = new float[] {15f, 25f, 35f }; // CLICK the right thumbstick to cycle through camera distances.
 	public float positionEasing = 0.1f; // HIGHER means snappier. Lower is smoother.
