@@ -4,7 +4,11 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Object
+    100004: Object_001
     400000: //RootNode
+    400002: Object
+    400004: Object_001
     2100000: m8_001
     2100002: m9_001
     2100004: m18_001
@@ -71,10 +75,15 @@ ModelImporter:
     2100126: m21
     2100128: m14
     2300000: //RootNode
+    2300002: Object
+    2300004: Object_001
     3300000: //RootNode
+    3300002: Object
+    3300004: Object_001
     4300000: Object_002
     4300002: Object_003
     4300004: Object
+    4300006: Object_001
   externalObjects: {}
   materials:
     importMaterials: 1
