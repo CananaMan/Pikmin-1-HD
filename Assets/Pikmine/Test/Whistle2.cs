@@ -4,8 +4,10 @@ using System.Collections;
 public class Whistle2 : MonoBehaviour
 {
     // Settables
-    public float diameterFull = 5f; // Blow me.
-    public float maxDistanceFromPlayer = 9f;
+    public float diameterFull = 5f; // Blow me daddy.
+    public float maxDistanceFromPlayer = 9f; // the max distance from the player the whistle can be.
+	public float expandSpeed = 0.05f; // the expansion speed of the whistle.
+	public float moveSpeed = 1f; // the move speed of the whistle. Lower Values are slower, higher values are faster.
     // References
     private Player player;
     // Properties
@@ -41,6 +43,7 @@ public class Whistle2 : MonoBehaviour
         SetIsOn(false);
         distanceX = 0;
         distanceZ = 0;
+		maxDistanceFromPlayer /= moveSpeed; // sets the max distance according to the move speed. Note that this can only work on the first frame of the game.
     }
 
 
@@ -117,7 +120,7 @@ public class Whistle2 : MonoBehaviour
         }
 
         // Go to position!
-        transform.position = new Vector3(player.transform.position.x + distanceX, transform.position.y, player.transform.position.z + distanceZ);
+        transform.position = new Vector3(player.transform.position.x + distanceX * moveSpeed, transform.position.y, player.transform.position.z + distanceZ * moveSpeed);
 
     }
 
@@ -128,7 +131,7 @@ public class Whistle2 : MonoBehaviour
 
         if (isOn)
         {
-            diameter = Mathf.Min(diameter + diameterFull * 0.05f, diameterFull);
+            diameter = Mathf.Min(diameter + diameterFull * expandSpeed, diameterFull);
             float bodyScale = diameter; // Note: We're loading in the sprite in a way for its scale to match its actual size in Unity units.
             whistleBodySprite.transform.localScale = new Vector3(bodyScale, bodyScale, bodyScale);
             whistleBodySprite.GetComponent<CapsuleCollider>().enabled = true;
