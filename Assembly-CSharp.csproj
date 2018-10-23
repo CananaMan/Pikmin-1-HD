@@ -61,6 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Pikmine\Test\CustomCamera.cs" />
+    <Compile Include="Assets\Pikmine\Test\Pikmine.cs" />
+    <Compile Include="Assets\Pikmine\Test\Player.cs" />
+    <Compile Include="Assets\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Pikmine\Test\Whistle.cs" />
+    <Compile Include="Assets\Pikmine\Test\Whistle2.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -108,12 +114,6 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\OnionWakeUp.cs" />
     <Compile Include="Assets\Scripts\Sun.cs" />
-    <Compile Include="Assets\Test\CustomCamera.cs" />
-    <Compile Include="Assets\Test\Pikmine.cs" />
-    <Compile Include="Assets\Test\Player.cs" />
-    <Compile Include="Assets\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Test\Whistle.cs" />
-    <Compile Include="Assets\Test\Whistle2.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
@@ -128,7 +128,7 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
-    <None Include="Assets\Test\Standard Assets\Skyboxes\_skybox info.txt" />
+    <None Include="Assets\Pikmine\Test\Standard Assets\Skyboxes\_skybox info.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
