@@ -56,25 +56,45 @@ public class Whistle2 : MonoBehaviour
 
     void Update()
     {
-        MoveToGroundY();
         MoveFromInput();
         UpdateBlow();
+    }
+
+    void FixedUpdate()
+    {
+        MoveToGroundY();
+        Rotate();
+    }
+
+    void Rotate()
+    {
+        RaycastHit rcHit;
+        //Make raycast direction down
+        Vector3 theRay = transform.TransformDirection(Vector3.down);
+
+        if (Physics.Raycast(transform.position, theRay, out rcHit))
+        {
+            //this is for getting distance from object to the ground
+            float GroundDis = rcHit.distance;
+            //with this you rotate object to adjust with terrain
+            transform.rotation = Quaternion.FromToRotation(Vector3.up, rcHit.normal);
+        }
     }
 
     void MoveToGroundY()
     {
         RaycastHit groundHit;
-        if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
-        {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.1f, transform.localPosition.z);
-        }
         if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.2f, transform.localPosition.z);
+        }
+        if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
+        {
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.2f, transform.localPosition.z);
         }
         if (Physics.Raycast(this.transform.position, Vector3.down, out groundHit))
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, reticuleSprite.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, this.transform.position.y - groundHit.distance + 0.2f, transform.localPosition.z);
         }
     }
 
