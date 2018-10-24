@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 988
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 12423
+  controlID: 74
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 598
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -167,7 +167,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: SpookyBrosia.szs
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,10 +208,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 988
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 12424
+  controlID: 11
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,10 +232,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 598
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 12425
+  controlID: 116
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,15 +254,15 @@ MonoBehaviour:
     y: 0
     width: 1152
     height: 598
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 19}
   - {fileID: 18}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -273150
+  m_LastSelectedObjectID: 5284
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,14 +346,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107501959643390040, guid: c199a3d706902c749980c1ddbe1f4d0c, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.690991
+    - e00: 1
       e01: 0
       e02: 0
-      e03: -72.82645
+      e03: -154
       e10: 0
-      e11: 0.690991
+      e11: 1
       e12: 0
-      e13: 119.797806
+      e13: 45
       e20: 0
       e21: 0
       e22: 1
@@ -413,20 +413,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/Entities/Not Enemies/Pikmin
+    - Assets/Scripts
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Models/Entities/Not Enemies/Pikmin
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\UnityPROJECT\Fookin around\Pikmin 1 HD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 112}
-    m_SelectedIDs: 20100000
-    m_LastClickedID: 4128
-    m_ExpandedIDs: 000000006a0a0000700a0000620c0000120d0000520d0000800e0000ee0e00000c10000020100000ba110000781300001a140000aa370000ac37000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 9c110000
+    m_LastClickedID: 4508
+    m_ExpandedIDs: 00000000680a00006e0a0000fe0c00003c0d0000423700004437000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,7 +454,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a0a0000700a0000620c0000120d0000520d0000800e0000ee0e00000c10000020100000ba110000781300001a140000aa370000ac37000000ca9a3b
+    m_ExpandedIDs: 00000000680a00006e0a0000520c0000fe0c00003c0d00006a0e0000d80e0000e60f0000fa0f0000601100000a130000a81300004237000044370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -507,8 +507,8 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
-  m_DirectoriesAreaWidth: 115
+    m_GridSize: 16
+  m_DirectoriesAreaWidth: 260
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -570,9 +570,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 24150000
-    m_LastClickedID: 5412
-    m_ExpandedIDs: 5a9dffff7a9dffff8c9dffffe4fbffffe6fbffff00000000201500006c150000
+    m_SelectedIDs: ecfaffff
+    m_LastClickedID: -1300
+    m_ExpandedIDs: ecfaffffe6fbffff00000000a4140000e0140000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,9 +627,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 63.195213, y: 60.251976, z: -1.5383148}
+    m_Target: {x: -23.906593, y: 30.607527, z: 230.8714}
     speed: 2
-    m_Value: {x: 63.195213, y: 60.251976, z: -1.5383148}
+    m_Value: {x: -23.906593, y: 30.607527, z: 230.8714}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -657,13 +657,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.025357751, y: -0.97303444, z: 0.18795447, w: 0.13127859}
+    m_Target: {x: 0.0040948256, y: 0.99245715, z: -0.03456535, w: 0.117546834}
     speed: 2
-    m_Value: {x: 0.025357751, y: -0.97303444, z: 0.18795447, w: 0.13127859}
+    m_Value: {x: 0.0040948256, y: 0.99245715, z: -0.03456535, w: 0.117546834}
   m_Size:
-    m_Target: 18.26643
+    m_Target: 48.10741
     speed: 2
-    m_Value: 18.26643
+    m_Value: 48.10741
   m_Ortho:
     m_Target: 0
     speed: 2
