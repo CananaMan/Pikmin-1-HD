@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: ec5b08fc8f6c13f41ac4a9eb3e208d53
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AntennaAttacheN
+    100002: AntennaJa
+    100004: AntennaJb
+    100006: AntennaJc
+    100008: AntennaJd
+    100010: BagJ
+    100012: BustN
+    100014: EyeM
+    100016: EyeMDmg
+    100018: HeadN
+    100020: HipN
+    100022: L1stNa
+    100024: L2ndNa
+    100026: LArmJ
+    100028: LFootJ
+    100030: LHandN
+    100032: LHandNb
+    100034: LHaveN
+    100036: LKneeJ
+    100038: LLegJ
+    100040: LShoulderJ
+    100042: LShoulderN
+    100044: LThumbNa
+    100046: LToeN
+    100048: mesh0000
+    100050: mesh0001
+    100052: mesh0002
+    100054: mesh0003
+    100056: mesh0004
+    100058: NeckN
+    100060: NoseJ
+    100062: //RootNode
+    100064: R1stNa
+    100066: R2ndNa
+    100068: RArmJ
+    100070: RFootJ
+    100072: RHandN
+    100074: RHandNb
+    100076: RHaveN
+    100078: RKneeJ
+    100080: RLegJ
+    100082: RShoulderJ
+    100084: RShoulderN
+    100086: RThumbNa
+    100088: RToeN
+    100090: ThrowN
+    100092: TopN
+    100094: TransN
+    100096: WaistN
+    100098: WaistNb
+    100100: XRotN
+    100102: YRotN
+    400000: AntennaAttacheN
+    400002: AntennaJa
+    400004: AntennaJb
+    400006: AntennaJc
+    400008: AntennaJd
+    400010: BagJ
+    400012: BustN
+    400014: EyeM
+    400016: EyeMDmg
+    400018: HeadN
+    400020: HipN
+    400022: L1stNa
+    400024: L2ndNa
+    400026: LArmJ
+    400028: LFootJ
+    400030: LHandN
+    400032: LHandNb
+    400034: LHaveN
+    400036: LKneeJ
+    400038: LLegJ
+    400040: LShoulderJ
+    400042: LShoulderN
+    400044: LThumbNa
+    400046: LToeN
+    400048: mesh0000
+    400050: mesh0001
+    400052: mesh0002
+    400054: mesh0003
+    400056: mesh0004
+    400058: NeckN
+    400060: NoseJ
+    400062: //RootNode
+    400064: R1stNa
+    400066: R2ndNa
+    400068: RArmJ
+    400070: RFootJ
+    400072: RHandN
+    400074: RHandNb
+    400076: RHaveN
+    400078: RKneeJ
+    400080: RLegJ
+    400082: RShoulderJ
+    400084: RShoulderN
+    400086: RThumbNa
+    400088: RToeN
+    400090: ThrowN
+    400092: TopN
+    400094: TransN
+    400096: WaistN
+    400098: WaistNb
+    400100: XRotN
+    400102: YRotN
+    2100000: FitPikminBody_png
+    2100002: FitPikminFace_png
+    2100004: FitPikminRef_png
+    4300000: mesh0000
+    4300002: mesh0001
+    4300004: mesh0002
+    4300006: mesh0003
+    4300008: mesh0004
+    9500000: //RootNode
+    13700000: mesh0000
+    13700002: mesh0001
+    13700004: mesh0002
+    13700006: mesh0003
+    13700008: mesh0004
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
