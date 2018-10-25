@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\PikminPush.cs" />
     <Compile Include="Assets\Scripts\SimpleSprite.cs" />
     <Compile Include="Assets\Scripts\Sun.cs" />
+    <Compile Include="Assets\Scripts\TextBOx.cs" />
     <Compile Include="Assets\Scripts\Whistle2.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
@@ -132,6 +133,7 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\Notes From Mee0\Files.txt" />
     <None Include="Assets\Pikmine\Test\Standard Assets\Skyboxes\_skybox info.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />

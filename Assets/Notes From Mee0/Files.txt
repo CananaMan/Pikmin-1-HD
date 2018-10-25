@@ -1,0 +1,61 @@
+**FileTypes found in plugTexConv**
+`BLO Files (*.blo)|*.blo|` = Screen Layout
+`PCR Files (*.pcr)|.*pcr` = ???
+`Texture Files (*.bti)|*.bti|` = texture
+`Mod Files (*.mod)|*.mod|` = model/archive ("bundle")
+`Import JMP` = A JMP file contains data that is organized in a tabular format of fields and records. Each field can contain one type of data, and each record can hold one data value for each field.
+`Import DVW` = bone joints ( ???? )
+`Files (*.dc?)|*.dc?|` = probably to do with AutoCad
+`Bundle Files (*.dir)|*.dir|` = Navigation file for arc
+`Source Model Files (*.dmd,*.bsp,*.md3)|*.dmd;*.bsp;*.md3 | for file %s, found filter for type` = DMD (3d model used for baking MODs), BSP = Model format used by the quake engine, MD3 = another quake format aka a model contains a set of meshes and tags (MisfitModel3d)
+`Conversion files (*.cnv)|*.cnv|` = Log or script for conversion plugin
+`Dolphin texture file (*.TXE)*.TXE` = textures
+`Targa files (*.TGA)*.TGA` = texture
+
+
+
+**Other Known File/Formats not yet found in the .dlls**
+`BTI Files (*.bti)` = texture
+`ANM Files (*.anm)` = Archive (animations folder) also called bundle
+`DCK Files (*.dck)` = Keyframed interpolated animation
+`ARC Files (*.arc)` = Binary blob archive (aka __bundle__)
+
+
+**File/Formats from PlugPiki.dll (offset 004723E0)**
+`Scene Files (*.dsk)|*.dsk|` = Demo scene keys (?)
+`Anim Files (*.bin)|*.bin|`
+`Bundle Files (*.anm)|*.anm|` = archive (animations folder) also called a bundle
+`Shape Files (*.mod)|*.mod|` = model
+`Cinematic Files (*.cin)|*.cin|`
+
+**Notes about plugPiki.dll**
+It loads pikmin 1 in developer/debug mode.
+Text starts to become readable at offset 00470010.
+Interestingly, at offset 00471410. It mentions that its has memorycard support.
+This has not been spoken of in conversations about plugPiki.dll thus far in Hocotate hacker.
+It even references formatting the memory card. It has references to making new MAPSELECT, SETUP,
+BANNER, CARDSELECT, COURSECLEAR, EXIT and CREDITS.
+At offset 00472120 there is a reference to pikis/happas/leaf.mod for seemingly no reason
+keep in mind that near this are references to the pikmin .MODs (which are for preloading
+for the level startup)
+
+
+**Notes about sysBootup.exe**
+When you load sysBootup and it throws that error, its because the developers didnt
+actually program it properly. They called for things when everything wasnt properly 
+initialised which means that it threw an error.
+Plugins are detected on program start, this can be confirmed by the command
+`+plugins  (folder where plugins are)` and the fact that if you move a plugin
+out of the plugins folder, it doesnt load.
+There are also dlls we dont know about/don't have access to.
+In sysBootup.exe at offset 00015010 you can see the different parameters, which are:
+```+client, +direct +plugins and +output.```
+Heres the text unedited if anyone cares.
+`OpenGL / Dolphin System. A top level window does not exist,the application will now close.
+Warning! config.ini, +client done Creating atxDirectRouter +direct +plugins +output 
+got cmdParams [%d] : %s plugins %s: sysBootup Basedir = %s DUIClearWin`
+Also in sysBootup.exe. At the final 4 offsets (0001B010 to 0001B040) we can see that it is
+a debug build of a developers program, as stated here:
+`C:\Development\DolphinPiki\sysBootup\Debug\sysBootup.pdb`
+It also seems to be a log of everything, which, if you open atxServer then it seems to 
+transfer its log-like capabillities over.

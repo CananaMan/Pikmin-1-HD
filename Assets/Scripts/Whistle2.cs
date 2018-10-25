@@ -140,13 +140,13 @@ public class Whistle2 : MonoBehaviour
             float bodyScale = diameter; // Note: We're loading in the sprite in a way for its scale to match its actual size in Unity units.
             whistleBodySprite.transform.localScale = new Vector3(bodyScale, bodyScale, bodyScale);
             whistleBodySprite.GetComponent<CapsuleCollider>().enabled = true;
-            Debug.Log("enabled");
+            //Debug.Log("enabled");
         }
 
         if (!isOn)
         {
             whistleBodySprite.GetComponent<CapsuleCollider>().enabled = false;
-            Debug.Log("disabled");
+            //Debug.Log("disabled");
         }
         //		if (isOn) {
         //			spriteRenderer.sprite = 

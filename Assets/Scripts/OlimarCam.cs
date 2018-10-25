@@ -18,10 +18,19 @@ public class OlimarCam : MonoBehaviour {
 	private Vector3 targetPosition; // where I aim to put myself (we ease into this position)
 	private Camera cam; // the camera component of the object.
 
+    private float[] disUp;
+    private float[] disAw;
+    private float[] disFo;
+
 	void Start () {
 		inputRotationVel = 0;
 		SetCurrentDistanceIndex(1);
 		cam = GetComponent<Camera> ();
+        disUp = distancesUp;
+        disAw = distancesAway;
+        disFo = FOVS;
+
+
 	}
 
 	void Update() {
@@ -29,6 +38,13 @@ public class OlimarCam : MonoBehaviour {
 		if (Input.GetButtonDown("Right Stick Click")) {
 			SetCurrentDistanceIndex(currentDistanceIndex + 1);
 		}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GameObject txt = GameObject.Find("Starting Text");
+            GameObject player = GameObject.Find("Player");
+            StartCoroutine(txt.GetComponent<TextBOx>().ShowText());
+            player.GetComponent<CharacterMotor>().enabled = false;
+        }
 	}
 
 	void SetCurrentDistanceIndex(int newIndex) {
