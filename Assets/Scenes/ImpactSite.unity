@@ -10627,8 +10627,8 @@ MonoBehaviour:
       m_RotationOrder: 4
     maxGroundAcceleration: 200
     maxAirAcceleration: 20
-    gravity: 40
-    maxFallSpeed: 20
+    gravity: 140
+    maxFallSpeed: 100
   jumping:
     enabled: 1
     baseHeight: 1
