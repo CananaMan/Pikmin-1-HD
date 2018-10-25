@@ -8,8 +8,11 @@ public class Whistle2 : MonoBehaviour
     public float maxDistanceFromPlayer = 9f; // the max distance from the player the whistle can be.
 	public float expandSpeed = 0.05f; // the expansion speed of the whistle.
 	public float moveSpeed = 1f; // the move speed of the whistle. Lower Values are slower, higher values are faster.
+	public float whistleRotationSpeed = 45f; // the rotation speed of the whistle particles.
+	public GameObject whistleParticles; // the particles of the whistle.
     // References
     private Player player;
+	private ParticleSystem whistleParticleSys; // the particle system of the whistle.
     // Properties
     private bool isOn; // true when we're whistling!
     private float diameter; // current diameter. 0 if we're off.
@@ -23,6 +26,7 @@ public class Whistle2 : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
+		whistleParticleSys = GetComponentInChildren<ParticleSystem> ();
         for (int i = 0; i < this.transform.childCount; i++)
         {
             GameObject child = transform.GetChild(i).gameObject;
@@ -68,6 +72,7 @@ public class Whistle2 : MonoBehaviour
 
     void FixedUpdate()
     {
+		whistleParticleSys.transform.Rotate (new Vector3(0,0,45));
     }
 
     void Rotate()
