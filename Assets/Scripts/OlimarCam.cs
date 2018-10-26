@@ -43,7 +43,6 @@ public class OlimarCam : MonoBehaviour {
             GameObject txt = GameObject.Find("Starting Text");
             GameObject player = GameObject.Find("Player");
             StartCoroutine(txt.GetComponent<TextBOx>().ShowText());
-            player.GetComponent<CharacterMotor>().enabled = false;
         }
 	}
 
