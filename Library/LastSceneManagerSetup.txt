@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/FileSelect.unity
-=======
 - path: Assets/Scenes/ImpactSite.unity
->>>>>>> f34d558bbd36113d161ac6d264c65784fa1a610b
   isLoaded: 1
   isActive: 1
