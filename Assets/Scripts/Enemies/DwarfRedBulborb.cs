@@ -1,33 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
 public class DwarfRedBulborb : MonoBehaviour {
 
-	// Settables
-	public int rangeX = 2, rangeY = 3; // this is the enemy's range settings.
+    // Settables
+    public float detectionRadius = 10f;
+    Transform target;
+    NavMeshAgent agent;
 
-
-	public Transform target; // this is the enemy's target. 
-	private CapsuleCollider range; // this is the enemy's actual range.
-
+    // Privates
+	private CapsuleCollider collider_range; // this is the enemy's actual range.
+    private bool isInRange = false;
 	// Use this for initialization
-	void Start () {
-		range = GetComponent<CapsuleCollider> ();
+	void Start ()
+    {
+        target = Player.instance.player.gameObject.transform;
+        agent = GetComponent<NavMeshAgent>();
+	}
 
-		range.radius = rangeX;
-		range.height = rangeY;
-	}
-	
-	// Update is called once per frame
-	void LateUpdate () {
-		Vector3.MoveTowards (gameObject.transform.position, target.position, 1f);
-		print ("test");
-	}
+    void Update()
+    {
+        float distance = Vector3.Distance(target.position, transform.position);
+
+        if (distance <= detectionRadius)
+        {
+            agent.SetDestination(target.position);
+        }
+    }
 
 	void OnTriggerEnter (Collider other) {
 		if (other.tag == "Player" || other.tag == "Pikmin") {
-			target = other.transform;
+
+            isInRange = true;
 		}
 	}
+
+    void OnTriggerExit (Collider other)
+    {
+        if (other.tag == "Player" || other.tag == "Pikmin")
+        {
+
+            isInRange = false;
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+    }
 }

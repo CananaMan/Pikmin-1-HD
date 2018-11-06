@@ -18,17 +18,17 @@ public class OlimarCam : MonoBehaviour {
 	private Vector3 targetPosition; // where I aim to put myself (we ease into this position)
 	private Camera cam; // the camera component of the object.
 
-    private float[] disUp;
+    /*private float[] disUp;
     private float[] disAw;
-    private float[] disFo;
+    private float[] disFo;*/
 
 	void Start () {
 		inputRotationVel = 0;
 		SetCurrentDistanceIndex(1);
 		cam = GetComponent<Camera> ();
-        disUp = distancesUp;
+        /*disUp = distancesUp;
         disAw = distancesAway;
-        disFo = FOVS;
+        disFo = FOVS;*/
 
 
 	}
