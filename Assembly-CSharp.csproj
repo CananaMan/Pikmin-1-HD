@@ -61,10 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Pikmine\Test\Pikmine.cs" />
     <Compile Include="Assets\Pikmine\Test\Player.cs" />
     <Compile Include="Assets\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Pikmine\Test\Whistle.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -113,13 +111,12 @@
     <Compile Include="Assets\Scripts\Enemies\DwarfRedBulborb.cs" />
     <Compile Include="Assets\Scripts\FileSelectController.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
-    <Compile Include="Assets\Scripts\OlimarCam.cs" />
+    <Compile Include="Assets\Scripts\Olimar\OlimarCam.cs" />
+    <Compile Include="Assets\Scripts\Olimar\WhistleScript.cs" />
     <Compile Include="Assets\Scripts\PikminController.cs" />
-    <Compile Include="Assets\Scripts\PikminPush.cs" />
     <Compile Include="Assets\Scripts\SimpleSprite.cs" />
     <Compile Include="Assets\Scripts\Sun.cs" />
-    <Compile Include="Assets\Scripts\TextBOx.cs" />
-    <Compile Include="Assets\Scripts\Whistle2.cs" />
+    <Compile Include="Assets\Scripts\textBox.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
@@ -142,7 +139,6 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-    <None Include="Assets\Models\Entities\Not Enemies\Olimar\Wii - Super Smash Bros Brawl - Olimar &amp; Pikmin\Credit.txt" />
     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
@@ -157,6 +153,7 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Materials\Yes.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />

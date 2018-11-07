@@ -7,20 +7,29 @@ public class DwarfRedBulborb : MonoBehaviour {
 
     // Settables
     public float detectionRadius = 10f;
+    public float extraRotationSpeed;
     Transform target;
     NavMeshAgent agent;
 
-	// Use this for initialization
-	void Start ()
+    // AI Turning isnt enough so we need more rotatiooononnnn
+    void extraRotation()
+    {
+        Vector3 lookrotation = agent.steeringTarget - transform.position;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookrotation), extraRotationSpeed * Time.deltaTime);
+    }
+
+    // Use this for initialization
+    void Start ()
     {
         target = Player.instance.player.gameObject.transform;
         agent = GetComponent<NavMeshAgent>();
 	}
 
-    void Update()
+    void FixedUpdate()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
+        extraRotation();
 
+        float distance = Vector3.Distance(target.position, transform.position);
         if (distance <= detectionRadius)
         {
             agent.SetDestination(target.position);
