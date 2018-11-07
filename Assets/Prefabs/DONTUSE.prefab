@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 65432798011862398}
   - component: {fileID: 54605651791642774}
   m_Layer: 0
-  m_Name: Chappy
+  m_Name: DONTUSE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

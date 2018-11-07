@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 289892001}
   - component: {fileID: 289892000}
   m_Layer: 0
-  m_Name: animationTestChapyp
+  m_Name: animationTestChappy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
