@@ -10,9 +10,6 @@ public class DwarfRedBulborb : MonoBehaviour {
     Transform target;
     NavMeshAgent agent;
 
-    // Privates
-	private CapsuleCollider collider_range; // this is the enemy's actual range.
-    private bool isInRange = false;
 	// Use this for initialization
 	void Start ()
     {
@@ -27,22 +24,6 @@ public class DwarfRedBulborb : MonoBehaviour {
         if (distance <= detectionRadius)
         {
             agent.SetDestination(target.position);
-        }
-    }
-
-	void OnTriggerEnter (Collider other) {
-		if (other.tag == "Player" || other.tag == "Pikmin") {
-
-            isInRange = true;
-		}
-	}
-
-    void OnTriggerExit (Collider other)
-    {
-        if (other.tag == "Player" || other.tag == "Pikmin")
-        {
-
-            isInRange = false;
         }
     }
 
