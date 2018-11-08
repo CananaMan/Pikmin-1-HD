@@ -11778,11 +11778,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a962bf22b3b6b4fa943d1998f6a753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
-  fullText: I had a horrific dream last night. I was home. \n My wife was cooking
-    even though i was full she kept on feeding me until i blew up
-  audio: {fileID: 8300000, guid: 94b179a5b7b276b40bbcbd39f76c7d23, type: 3}
-  currentText: 
 --- !u!1 &1756436143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100062, guid: ec5b08fc8f6c13f41ac4a9eb3e208d53,
