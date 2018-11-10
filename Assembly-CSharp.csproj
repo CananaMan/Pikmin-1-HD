@@ -61,7 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Pikmine\Test\Player.cs" />
+    <Compile Include="Assets\DayManRewriteten.cs" />
     <Compile Include="Assets\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -108,10 +108,13 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\DayManager\DayManager.cs" />
+    <Compile Include="Assets\Scripts\DayManager\MusicChild.cs" />
     <Compile Include="Assets\Scripts\Enemies\DwarfRedBulborb.cs" />
     <Compile Include="Assets\Scripts\FileSelectController.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\Olimar\OlimarCam.cs" />
+    <Compile Include="Assets\Scripts\Olimar\playerSingleton.cs" />
     <Compile Include="Assets\Scripts\Olimar\WhistleScript.cs" />
     <Compile Include="Assets\Scripts\PikminController.cs" />
     <Compile Include="Assets\Scripts\SimpleSprite.cs" />

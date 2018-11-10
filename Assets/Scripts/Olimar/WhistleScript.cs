@@ -11,7 +11,7 @@ public class WhistleScript : MonoBehaviour
 	public float whistleRotationSpeed = 45f; // the rotation speed of the whistle particles.
 	public GameObject whistleParticles; // the particles of the whistle.
     // References
-    private Player player;
+    private playerSingleton player;
 	private ParticleSystem whistleParticleSys; // the particle system of the whistle.
     // Properties
     private bool isOn; // true when we're whistling!
@@ -27,10 +27,10 @@ public class WhistleScript : MonoBehaviour
     {
         //Olimar Stuff
         if (GameObject.Find("Olimar") == null)
-            player = GameObject.Find("Player").GetComponent<Player>();
+            player = GameObject.Find("Player").GetComponent<playerSingleton>();
 
         if (GameObject.Find("Player") == null)
-            player = GameObject.Find("Olimar").GetComponent<Player>();
+            player = GameObject.Find("Olimar").GetComponent<playerSingleton>();
         
         //Neos particle stuff
         whistleParticleSys = GetComponentInChildren<ParticleSystem> ();
@@ -72,8 +72,8 @@ public class WhistleScript : MonoBehaviour
 
     void Update()
     {
-        MoveToGroundY();
         Rotate();
+        MoveToGroundY();
         MoveFromInput();
         UpdateBlow();
     }

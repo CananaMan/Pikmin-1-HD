@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class playerSingleton : MonoBehaviour {
     //AI Stuff:
     #region Singleton
-        public static Player instance;
+        public static playerSingleton instance;
 
         void Awake()
         {

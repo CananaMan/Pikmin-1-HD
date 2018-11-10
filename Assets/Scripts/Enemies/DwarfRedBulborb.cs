@@ -21,7 +21,7 @@ public class DwarfRedBulborb : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        target = Player.instance.player.gameObject.transform;
+        target = playerSingleton.instance.player.gameObject.transform;
         agent = GetComponent<NavMeshAgent>();
 	}
 

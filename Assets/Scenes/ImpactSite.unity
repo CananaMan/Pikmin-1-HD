@@ -461,11 +461,11 @@ Animator:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289891999}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b188553ecd573364ca4cf1564288a037, type: 3}
+  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c92a09a1dd6d4c2459034aa55cda8b34, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -479,10 +479,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289891999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 44, z: 0}
+  m_LocalPosition: {x: 0, y: 76.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 497635997}
+  - {fileID: 1030734661}
+  - {fileID: 1496974115}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -672,36 +673,6 @@ MonoBehaviour:
   moveSpeed: 1.5
   whistleRotationSpeed: 45
   whistleParticles: {fileID: 1439878646}
---- !u!1 &497635996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 497635997}
-  m_Layer: 0
-  m_Name: tempFix?
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &497635997
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 497635996}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children:
-  - {fileID: 1030734661}
-  - {fileID: 1496974115}
-  m_Father: {fileID: 289892001}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &499604646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4765431397809848, guid: a81436c066552f04d8ed15c2a71d94b0,
@@ -731,7 +702,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 571691404}
   m_LocalRotation: {x: 8.6595606e-17, y: 0.7071081, z: -8.6595606e-17, w: 0.7071055}
-  m_LocalPosition: {x: -0.010384854, y: 0.18879804, z: 0.1576545}
+  m_LocalPosition: {x: -0.010384854, y: 0.233, z: 0.158}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 803713660}
@@ -1136,11 +1107,11 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1030734660}
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.000000119209275, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100.00004, z: 100.00004}
+  m_LocalScale: {x: 25, y: 25.000029, z: 25.000029}
   m_Children: []
-  m_Father: {fileID: 497635997}
+  m_Father: {fileID: 289892001}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &1030734662
@@ -1160,8 +1131,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100004, guid: b188553ecd573364ca4cf1564288a037, type: 3}
-  - {fileID: 2100000, guid: b188553ecd573364ca4cf1564288a037, type: 3}
-  - {fileID: 2100002, guid: b188553ecd573364ca4cf1564288a037, type: 3}
+  - {fileID: 2100000, guid: 66e8a4a94c1d71d408ae44f0c33bd054, type: 2}
+  - {fileID: 2100000, guid: 89f0627ad1646444c87c746c1bd7fdc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11213,12 +11184,12 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1496974114}
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.000000119209275, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100.00004, z: 100.00004}
+  m_LocalScale: {x: 25, y: 25.000029, z: 25.000029}
   m_Children:
   - {fileID: 571691405}
-  m_Father: {fileID: 497635997}
+  m_Father: {fileID: 289892001}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503790519 stripped
