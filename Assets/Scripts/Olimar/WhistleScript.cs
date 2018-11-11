@@ -80,7 +80,7 @@ public class WhistleScript : MonoBehaviour
 
     void FixedUpdate()
     {
-		whistleParticleSys.transform.Rotate (new Vector3(0,0,45));
+		//whistleParticleSys.transform.Rotate (new Vector3(0,0,45));
     }
 
     void Rotate()
