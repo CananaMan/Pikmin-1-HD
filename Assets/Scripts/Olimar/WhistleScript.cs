@@ -12,7 +12,7 @@ public class WhistleScript : MonoBehaviour
 	public GameObject whistleParticles; // the particles of the whistle.
     // References
     private playerSingleton player;
-	private ParticleSystem whistleParticleSys; // the particle system of the whistle.
+	//private ParticleSystem whistleParticleSys; // the particle system of the whistle.
     // Properties
     private bool isOn; // true when we're whistling!
     private float diameter; // current diameter. 0 if we're off.
@@ -33,7 +33,7 @@ public class WhistleScript : MonoBehaviour
             player = GameObject.Find("Olimar").GetComponent<playerSingleton>();
         
         //Neos particle stuff
-        whistleParticleSys = GetComponentInChildren<ParticleSystem> ();
+        //whistleParticleSys = GetComponentInChildren<ParticleSystem> ();
         //Finding the whistle gameobjects.
         for (int i = 0; i < this.transform.childCount; i++)
         {

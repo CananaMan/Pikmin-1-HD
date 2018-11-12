@@ -60,7 +60,6 @@ public class DayManager : MonoBehaviour {
 	void musicPlay() {
         bool loadedMusicTwo = false;
         bool twoComplete = false;
-        bool secondPlayed = false;
 
         var thisAudio = GetComponent<AudioSource>();
         var childAudio = secondaryMusicObject.GetComponent<AudioSource>();

@@ -21,17 +21,17 @@ public class OlimarCam : MonoBehaviour {
     /*private float[] disUp;
     private float[] disAw;
     private float[] disFo;*/
+    private GameObject txt; // textbox object
 
-	void Start () {
+    void Start () {
 		inputRotationVel = 0;
 		SetCurrentDistanceIndex(1);
 		cam = GetComponent<Camera> ();
         /*disUp = distancesUp;
         disAw = distancesAway;
         disFo = FOVS;*/
-
-
-	}
+        txt = GameObject.Find("Starting Text");
+    }
 
 	void Update() {
 		// Change camera distance!
@@ -40,9 +40,7 @@ public class OlimarCam : MonoBehaviour {
 		}
         if (Input.GetKeyDown(KeyCode.P))
         {
-            GameObject txt = GameObject.Find("Starting Text");
-            GameObject player = GameObject.Find("Player");
-            StartCoroutine(txt.GetComponent<TextBOx>().ShowText());
+            StartCoroutine(txt.GetComponent<textBox>().ShowText());
         }
 	}
 
