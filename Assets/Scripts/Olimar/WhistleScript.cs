@@ -38,7 +38,7 @@ public class WhistleScript : MonoBehaviour
         for (int i = 0; i < this.transform.childCount; i++)
         {
             GameObject child = transform.GetChild(i).gameObject;
-            Debug.Log(child.name);
+            //Debug.Log(child.name);
             if (child.name == "Reticule")
             {
                 reticuleSprite = child.GetComponent<SpriteRenderer>();

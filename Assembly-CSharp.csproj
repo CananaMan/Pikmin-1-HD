@@ -120,6 +120,7 @@
     <Compile Include="Assets\Scripts\SimpleSprite.cs" />
     <Compile Include="Assets\Scripts\Sun.cs" />
     <Compile Include="Assets\Scripts\textBox.cs" />
+    <Compile Include="Assets\TutoManagerImpactSite.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
