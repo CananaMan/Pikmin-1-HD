@@ -14,7 +14,7 @@ public class OlimarCam : MonoBehaviour {
 	private float FOV;
 	private float distanceUp;
 	private float distanceAway;
-	private float inputRotationVel; // rotate the camera with the right thumbstick.
+	public float inputRotationVel; // rotate the camera with the right thumbstick.
 	private Vector3 targetPosition; // where I aim to put myself (we ease into this position)
 	private Camera cam; // the camera component of the object.
 
@@ -24,7 +24,7 @@ public class OlimarCam : MonoBehaviour {
     private GameObject txt; // textbox object
 
     void Start () {
-		inputRotationVel = 0;
+		//inputRotationVel = 0;
 		SetCurrentDistanceIndex(1);
 		cam = GetComponent<Camera> ();
         /*disUp = distancesUp;
