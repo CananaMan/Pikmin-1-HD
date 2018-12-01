@@ -55,7 +55,7 @@ public class OlimarCam : MonoBehaviour {
     }
 	
 	void FixedUpdate () {
-		float angleToTarget = Mathf.Atan2 (transform.position.z-myTarget.position.z, transform.position.x-myTarget.position.x);
+        float angleToTarget = Mathf.Atan2 (transform.position.z-myTarget.position.z, transform.position.x-myTarget.position.x);
 
 		// Accept input to rotate, yo!
 		inputRotationVel *= 0.92f;

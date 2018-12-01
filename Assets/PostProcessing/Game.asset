@@ -14,7 +14,7 @@ MonoBehaviour:
   debugViews:
     m_Enabled: 1
     m_Settings:
-      mode: 9
+      mode: 0
       depth:
         scale: 1
       motionVectors:
@@ -121,9 +121,9 @@ MonoBehaviour:
         neutralWhiteClip: 10
       basic:
         postExposure: 0.3
-        temperature: 38.6
-        tint: -7.3
-        hueShift: 0
+        temperature: 32.1
+        tint: 4.8
+        hueShift: 2
         saturation: 1.059
         contrast: 0.916
       channelMixer:

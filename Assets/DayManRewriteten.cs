@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DayManRewriteten : MonoBehaviour {
     public GameObject sunSprite;
+    public int timeSpeed;
+    private int second;
+    private int timeOfDay;
 
 	void Start () {
         //Debug.Log("The position of the day object is:" + dayPos.ToString());
@@ -13,4 +16,12 @@ public class DayManRewriteten : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void secondTick()
+    {
+        second = timeOfDay + second;
+        Vector3 sunSpritePos = sunSprite.GetComponent<RectTransform>().position;
+        Vector3 dayPos = new Vector3(sunSpritePos.x + timeSpeed, sunSpritePos.y, sunSpritePos.z);
+        //sunSprite = dayPos; // move the sunsprite across the screen
+    }
 }
