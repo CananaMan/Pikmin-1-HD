@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Pikmin
   - Enemy
-  - Onion
-  - Ship
+  - ShipLight
+  - OnionLight
+  - Map
   layers:
   - Default
   - TransparentFX

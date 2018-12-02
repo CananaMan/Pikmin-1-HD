@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\pikminAI.cs" />
+    <Compile Include="Assets\pikminDetect.cs" />
     <Compile Include="Assets\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -165,6 +167,7 @@
     <None Include="Assets\Models\Entities\Not Enemies\Olimar\info.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\changelog.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>G:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -20,11 +20,11 @@ public class DayManager : MonoBehaviour
     }
 
     void secondTick()
-    { // Need to optimize this function, not sure how to :/
+    { 
         second = daySpeed + second;
         Vector3 dayPos = new Vector3
             (
-            dayImage.GetComponent<RectTransform>().position.x + daySpeed,
+            dayImage.GetComponent<RectTransform>().position.x + daySpeed * Time.deltaTime,
             dayImage.GetComponent<RectTransform>().position.y,
             dayImage.GetComponent<RectTransform>().position.z
             );
@@ -41,14 +41,14 @@ public class DayManager : MonoBehaviour
             if (dayState == 23)
                 return;
             else
-                dayState = 22;
+                dayState = 22; thisAudio.loop = false;
         }
         if (second >= 900)
         { // if its more than 900 its night
             if (dayState == 34)
                 return;
             else
-                dayState = 33;
+                dayState = 33; thisAudio.loop = false;
         }
         if (second >= 1060)
         {
@@ -67,7 +67,6 @@ public class DayManager : MonoBehaviour
         }
 
         if (dayState == 22 && !thisAudio.isPlaying) { //day undone and isnt playing
-            StartCoroutine(fadeOut()); // fade out current music
             thisAudio.clip = music[1]; // put main in the clip
             StartCoroutine(fadeIn()); // play it repeatedly
             dayState = 23; // music is now playing
@@ -75,7 +74,6 @@ public class DayManager : MonoBehaviour
 
         if (dayState == 33 && !thisAudio.isPlaying)
         {
-            StartCoroutine(fadeOut());
             thisAudio.clip = music[2];
             StartCoroutine(fadeIn());
             dayState = 34;
@@ -93,26 +91,13 @@ public class DayManager : MonoBehaviour
         float t = 0.0f;
         while (t < 1)
         {
-            t += 0.1f;
+            t += 0.009f;
             thisAudio.volume = t;
             yield return new WaitForSeconds(0);
         }
-    }
-    IEnumerator fadeOut()
-    {
-        thisAudio.loop = false;
-        float t = 1;
-        while (t > 0.0f)
-        {
-            t -= 0.1f;
-            thisAudio.volume = t;
-            yield return new WaitForSeconds(0);
-        }
-        thisAudio.volume = 0.0f;
     }
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (dayState == 4)
         {

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TutoManagerImpactSite : MonoBehaviour {
-    public GameObject camera;
+    //public GameObject camera;
     public GameObject player;
     public GameObject whistle;
-    private Camera mainCam;
+   // private Camera mainCam;
     void Start () {
-        mainCam = camera.GetComponent<Camera>(); // camera definitioningiongiong
+        //mainCam = GetComponent<Camera>().GetComponent<Camera>(); // camera definitioningiongiong
         //Olimar definition
         if (player.name == null)
         {
