@@ -61,8 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\pikminAI.cs" />
-    <Compile Include="Assets\pikminDetect.cs" />
     <Compile Include="Assets\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -118,11 +116,13 @@
     <Compile Include="Assets\Scripts\Olimar\OlimarCam.cs" />
     <Compile Include="Assets\Scripts\Olimar\playerSingleton.cs" />
     <Compile Include="Assets\Scripts\Olimar\WhistleScript.cs" />
+    <Compile Include="Assets\Scripts\pikminAI.cs" />
     <Compile Include="Assets\Scripts\PikminController.cs" />
+    <Compile Include="Assets\Scripts\pikminDetect.cs" />
     <Compile Include="Assets\Scripts\SimpleSprite.cs" />
     <Compile Include="Assets\Scripts\Sun.cs" />
     <Compile Include="Assets\Scripts\textBox.cs" />
-    <Compile Include="Assets\TutoManagerImpactSite.cs" />
+    <Compile Include="Assets\Scripts\TutoManagerImpactSite.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
@@ -154,6 +154,7 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\readme.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
@@ -167,7 +168,6 @@
     <None Include="Assets\Models\Entities\Not Enemies\Olimar\info.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
-    <None Include="Assets\changelog.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>G:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
