@@ -31,9 +31,9 @@ MonoBehaviour:
   antialiasing:
     m_Enabled: 1
     m_Settings:
-      method: 1
+      method: 0
       fxaaSettings:
-        preset: 4
+        preset: 1
       taaSettings:
         jitterSpread: 1
         sharpen: 0
@@ -42,8 +42,8 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 0.54
-      radius: 0.09
+      intensity: 0.79
+      radius: 6.7
       sampleCount: 16
       downsampling: 1
       forceForwardCompatibility: 1
@@ -71,22 +71,22 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 10
-      aperture: 5.6
+      focusDistance: 4.73
+      aperture: 3.4
       focalLength: 50
-      useCameraFov: 0
+      useCameraFov: 1
       kernelSize: 1
   motionBlur:
     m_Enabled: 0
     m_Settings:
-      shutterAngle: 270
-      sampleCount: 10
-      frameBlending: 0
+      shutterAngle: 263
+      sampleCount: 9
+      frameBlending: 0.009
   eyeAdaptation:
     m_Enabled: 1
     m_Settings:
-      lowPercent: 59.61438
-      highPercent: 99
+      lowPercent: 38.063877
+      highPercent: 77.44951
       minLuminance: -5
       maxLuminance: 1
       keyValue: 0.25
@@ -120,23 +120,23 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0.3
-        temperature: 32.1
-        tint: 4.8
-        hueShift: 2
-        saturation: 1.059
-        contrast: 0.916
+        postExposure: 0.66
+        temperature: 8.3
+        tint: 1
+        hueShift: 0
+        saturation: 1.2
+        contrast: 1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
         blue: {x: 0, y: 0, z: 1}
-        currentEditingChannel: 0
+        currentEditingChannel: 2
       colorWheels:
         mode: 1
         log:
-          slope: {r: 0.80409974, g: 1, b: 0.8423976, a: 0.026578072}
-          power: {r: 1, g: 1, b: 1, a: 0}
-          offset: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 0.8208555, g: 1, b: 0.86981285, a: 0.22962376}
+          power: {r: 1, g: 1, b: 1, a: -0.16243654}
+          offset: {r: 1, g: 1, b: 1, a: 0.040609136}
         linear:
           lift: {r: 0, g: 0, b: 0, a: 0}
           gamma: {r: 0, g: 0, b: 0, a: 0}
