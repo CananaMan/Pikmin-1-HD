@@ -58,7 +58,6 @@ public class WhistleScript : MonoBehaviour
 		maxDistanceFromPlayer /= moveSpeed; // sets the max distance according to the move speed. Note that this can only work on the first frame of the game.
     }
 
-
     void SetIsOn(bool IsOn)
     {
         if (isOn == IsOn) { return; }
@@ -70,8 +69,8 @@ public class WhistleScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rotate();
         MoveToGroundY();
+        Rotate();
         MoveFromInput();
         UpdateBlow();
         //whistleParticleSys.transform.Rotate (new Vector3(0,0,45));
@@ -85,8 +84,6 @@ public class WhistleScript : MonoBehaviour
 
         if (Physics.Raycast(transform.position, theRay, out rcHit))
         {
-            //this is for getting distance from object to the ground
-            float GroundDis = rcHit.distance;
             //with this you rotate object to adjust with terrain
             transform.rotation = Quaternion.FromToRotation(Vector3.up, rcHit.normal);
         }
@@ -95,13 +92,14 @@ public class WhistleScript : MonoBehaviour
     void MoveToGroundY()
     {
         RaycastHit groundHit;
-        if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
-        {
-            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.2f, transform.localPosition.z);
-        }
         if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.2f, transform.localPosition.z);
+            print(groundHit.distance);
+        }
+        if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
+        {
+            transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.2f, transform.localPosition.z);
         }
         if (Physics.Raycast(this.transform.position, Vector3.down, out groundHit))
         {
