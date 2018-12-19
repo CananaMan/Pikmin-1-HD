@@ -17,7 +17,7 @@ ModelImporter:
       name: OceanPLaneMaterial
     second: {fileID: 2100000, guid: a437a9b380909fa4d98f929428f70388, type: 2}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 1
     materialSearch: 1
     materialLocation: 0

@@ -19,7 +19,7 @@ ModelImporter:
       name: WaterPlaneMaterial
     second: {fileID: 2100000, guid: f1bc741ea0e69a241896582ddb633d55, type: 2}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 1
     materialSearch: 1
     materialLocation: 0
