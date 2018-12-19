@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 1a79f425613858147b24602ce04293b0, type: 3}
-  m_Sun: {fileID: 1497939631}
+  m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.15475959, g: 0.2184287, b: 0.1989992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -60,7 +60,7 @@ LightmapSettings:
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 512
-    m_AO: 1
+    m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 0.96
     m_CompAOExponentDirect: 0
@@ -73,7 +73,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 1
-    m_MixedBakeMode: 1
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
@@ -91,9 +91,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000008, guid: abc1ecd2f6b9c1d4e8ce313c60cb6105,
+  m_LightingDataAsset: {fileID: 112000010, guid: abc1ecd2f6b9c1d4e8ce313c60cb6105,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2113,7 +2113,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: e87c9a2864beffb4bbac8e6ddb36a792, type: 2}
   - {fileID: 2100000, guid: 339ffff80465ac24ab3f41f50849989f, type: 2}
   - {fileID: 2100000, guid: 7dcb268801b8f804c8fe8798be56e696, type: 2}
-  - {fileID: 2100000, guid: c97ad6ccec10ec449870f26f02205da4, type: 2}
+  - {fileID: 2100000, guid: 11382ab0604a6f1428dbaebdb73a7446, type: 2}
   - {fileID: 2100000, guid: d3e91f953f1b5fe4e926910e97713acc, type: 2}
   - {fileID: 2100000, guid: 6cc879cbfe39689428c49aa03ea8e157, type: 2}
   m_StaticBatchInfo:
@@ -2435,7 +2435,7 @@ MeshRenderer:
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
+  m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2453,7 +2453,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1228521637}
   m_LocalRotation: {x: 0.2960372, y: 0.6421542, z: -0.6421542, w: 0.2960372}
-  m_LocalPosition: {x: -89.72438, y: 15.2936325, z: -10.066788}
+  m_LocalPosition: {x: -89.72438, y: 57.88, z: -10.066788}
   m_LocalScale: {x: 276.25745, y: 364.48346, z: 1.0002015}
   m_Children: []
   m_Father: {fileID: 801953254}
@@ -11960,7 +11960,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1497939629}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.71, y: 2.8, z: -6.04}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083216438}
@@ -11976,7 +11976,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.7225477, b: 0.3820755, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.15
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -11984,9 +11984,9 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0
-    m_NormalBias: 0
+    m_Strength: 0.793
+    m_Bias: 0.108
+    m_NormalBias: 0.178
     m_NearPlane: 0.1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
@@ -11995,7 +11995,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -12267,7 +12267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 6f28942b5f4343f459d2bf8b91ebb830, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1077.2546
+      value: -1058.5
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 6f28942b5f4343f459d2bf8b91ebb830, type: 3}
       propertyPath: m_LocalPosition.y
