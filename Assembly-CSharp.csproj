@@ -107,6 +107,7 @@
     <Compile Include="Assets\Other\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Other\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Other\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\PikminManager.cs" />
     <Compile Include="Assets\Scripts\DayManager\DayManager.cs" />
     <Compile Include="Assets\Scripts\Enemies\DwarfRedBulborb.cs" />
     <Compile Include="Assets\Scripts\Important\FileSelectController.cs" />

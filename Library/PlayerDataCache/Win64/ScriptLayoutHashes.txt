@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-G:/_Other/Personal/P1HD/#2/#3/#4/#5/#6/#7/#7.5/#8/#9/#10/Pikmin 1 HD.exe
+G:/Personal/Downloads/ohyeahmrkrabs/Pikmin 1 HD.exe
 SceneListBegin?
 Assets/Scenes/ImpactSite.unity
 SceneListEnd?
@@ -22,7 +22,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 cedf5240c81c0fa83c2220f9cadd72fc Assembly-CSharp.dll:.MainMenuController
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 b5ac0551c03ebb6ff6aed13d4150ee02 Assembly-UnityScript.dll:.ThirdPersonController
-71239a077dc3e5076effa5b603693afa Assembly-CSharp.dll:.TutoManagerImpactSite
+113a53c85c664b82f5b90d2f90728b2c Assembly-CSharp.dll:.TutoManagerImpactSite
 b2a1a76da86114aac47d18f2667f85b4 Assembly-CSharp.dll:.FileSelectController
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:.EventSystemChecker
@@ -94,6 +94,7 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 98f0dfd2378729c082be8d0dd8ea0d71 Assembly-CSharp.dll:UnityEngine.PostProcessing.PostProcessingBehaviour
 68203a2d90186aa6245d3bc6e3f65b52 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectActivator
+0102bb8bbdb0ee84d1cce53e1bb5547a Assembly-CSharp.dll:.pikminAI
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9e61f3535f3c55760a1cedfbd114f4af UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 754551afe4f2531f58476bf14c510657 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -106,7 +107,6 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-f8445ad95b2db016c45df0d97e950eb8 Assembly-CSharp.dll:.SimpleSprite
 66b3109aa5921cf800bec17926c6adba Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 486cd95c82d8305219c352c06b776e1f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -140,13 +140,14 @@ dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 81d6a421cbac2031cd5e35b10c8ac717 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ActivateTrigger
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 6ad1f6a83810a6eca9ac72ee4f47808b Assembly-UnityScript.dll:.PlatformInputController
+c93d5eaea58338c563c4afcbe0865cd6 Assembly-CSharp.dll:.pikminDetect
 a455c7a94d636e997cf13415fea7bbb1 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMoveAndRotate
+14a940098ead1df01676248d1b6aef64 Assembly-CSharp.dll:.Logger
 202ddcdf9392f5f9809cc33a273f8b5e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SmoothFollow
 c79734ed2b41bb79448c074ed54ef846 Assembly-CSharp.dll:.WhistleScript
 9d2dcb93c6d3966022839f0e4ec3fa63 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.PlanarReflection
 e2bc6ef764fff21ff1e9db5ef924d331 Assembly-CSharp.dll:.ExampleWheelController
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.Displace
-1fb95117e918f5d71b4d4ff7eab856c7 Assembly-CSharp.dll:.MusicChild
 486cd95c82d8305219c352c06b776e1f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 5ddde0c0917444a359713c5788666823 Assembly-CSharp.dll:.OlimarCam
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
@@ -198,7 +199,7 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 713f094d38dde97adcca89d1fad847c0 Assembly-CSharp.dll:UnityEngine.PostProcessing.PostProcessingProfile
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 ebc31dc7976aeffcc84e23b049016bd0 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FollowTarget
-6ff2184080274b3e438a5a5041273798 Assembly-CSharp.dll:.DayManager
+43f34cfb46c5aae36629a0ed7144084d Assembly-CSharp.dll:.DayManager
 5b83580a22df4ed5e756000935aa4092 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.GerstnerDisplace
 411e0cded9b8b07363ee806043d90dbf Assembly-CSharp.dll:.DwarfRedBulborb
@@ -210,5 +211,4 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 88c45f108e0662a57679eb25d9cc1979 Assembly-UnityScript.dll:.CharacterMotor
 3808576c17d58f192e2519a441757a58 Assembly-CSharp.dll:.textBox
-7df77fc13eec33c112afead95d493147 Assembly-CSharp.dll:.DayManRewriteten
 695c9335429d4798b6f74ca73c042ff4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
