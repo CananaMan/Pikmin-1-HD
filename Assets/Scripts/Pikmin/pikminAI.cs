@@ -27,9 +27,11 @@ public class pikminAI : MonoBehaviour {
         agent.enabled = false;
     }
 	
-	// Update is called once per frame
 	void FixedUpdate () {
-
+		StartCoroutine(pikChecks());
+	}
+    
+	IEnumerator pikChecks() {
 		if (isWithPlayer)
         {
             if (isFlower)
@@ -39,9 +41,14 @@ public class pikminAI : MonoBehaviour {
             }
             agent.enabled = true;
             agent.SetDestination(playerT.position);
+			yield return new WaitForSeconds(.2f);
         }
+		else {
+			yield return null;
+		}
+		
 	}
-    
+	
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")

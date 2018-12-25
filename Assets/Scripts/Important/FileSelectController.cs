@@ -19,8 +19,7 @@ public class FileSelectController : MonoBehaviour {
 
     void whenClicked(GameObject button, int index)
     {
-        anim = button.GetComponent<Animator>();
+		anim = button.GetComponent<Animator>();
         anim.SetBool("Clicked", true);
-        
     }
 }

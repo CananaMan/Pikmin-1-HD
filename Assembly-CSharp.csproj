@@ -99,9 +99,9 @@
      <Compile Include="Assets\Other\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\Other\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\Other\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-     <Compile Include="Assets\PikminManager.cs" />
      <Compile Include="Assets\Scripts\DayManager\DayManager.cs" />
-     <Compile Include="Assets\Scripts\Enemies\DwarfRedBulborb.cs" />
+     <Compile Include="Assets\Scripts\Enemies\ChappyAIHandler.cs" />
+     <Compile Include="Assets\Scripts\Enemies\ChappyAnimHandler.cs" />
      <Compile Include="Assets\Scripts\Important\FileSelectController.cs" />
      <Compile Include="Assets\Scripts\Important\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\Olimar\OlimarCam.cs" />
@@ -112,13 +112,14 @@
      <Compile Include="Assets\Scripts\Other\textBox.cs" />
      <Compile Include="Assets\Scripts\Other\TutoManagerImpactSite.cs" />
      <Compile Include="Assets\Scripts\Pikmin\pikminAI.cs" />
-     <Compile Include="Assets\Scripts\Pikmin\PikminController.cs" />
      <Compile Include="Assets\Scripts\Pikmin\pikminDetect.cs" />
+     <Compile Include="Assets\Scripts\Pikmin\PikminManager.cs" />
      <None Include="Assets\Other\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Other\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
      <None Include="Assets\Other\PostProcessing\Resources\Shaders\Fog.shader" />
      <None Include="Assets\Other\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
      <None Include="Assets\Other\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\Changelog.txt" />
      <None Include="Assets\Other\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\Other\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\Other\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />

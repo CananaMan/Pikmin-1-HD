@@ -35,9 +35,4 @@ public class MainMenuController : MonoBehaviour {
 			yield return new WaitForSeconds (changeSmoothness);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

@@ -33,7 +33,6 @@ public class pikminDetect : MonoBehaviour {
         colGameObject.GetComponent<pikminAI>().isWithPlayer = true;
         pikminSquad.Insert(count, pikmin);
         pikminCount++;
-        pikminSquad.Sort();
         
     }
 
