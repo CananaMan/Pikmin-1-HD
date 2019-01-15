@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 5e5644d3fe17bf64ca1bb76e8111a05b, type: 3}
   m_Sun: {fileID: 1497939631}
-  m_IndirectSpecularColor: {r: 0.15475969, g: 0.21842891, b: 0.19899946, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10660,7 +10660,7 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1071580255}
-  m_Mesh: {fileID: 4300008, guid: dc317661ea031a944bab9ab126670632, type: 3}
+  m_Mesh: {fileID: 4300002, guid: dc317661ea031a944bab9ab126670632, type: 3}
 --- !u!4 &1071580258
 Transform:
   m_ObjectHideFlags: 0
@@ -10689,7 +10689,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300008, guid: dc317661ea031a944bab9ab126670632, type: 3}
+  m_Mesh: {fileID: 4300002, guid: dc317661ea031a944bab9ab126670632, type: 3}
 --- !u!1 &1072239275
 GameObject:
   m_ObjectHideFlags: 0
@@ -26591,7 +26591,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825047686}
-  - component: {fileID: 1825047688}
   - component: {fileID: 1825047687}
   m_Layer: 0
   m_Name: FlippedNormMesh
@@ -26626,14 +26625,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300006, guid: dc317661ea031a944bab9ab126670632, type: 3}
---- !u!33 &1825047688
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1825047685}
-  m_Mesh: {fileID: 4300006, guid: dc317661ea031a944bab9ab126670632, type: 3}
+  m_Mesh: {fileID: 4300000, guid: dc317661ea031a944bab9ab126670632, type: 3}
 --- !u!1 &1830685399
 GameObject:
   m_ObjectHideFlags: 0
