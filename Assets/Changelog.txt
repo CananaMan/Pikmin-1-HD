@@ -1,4 +1,3 @@
-OK, so i've optimized the pikmin and bulborb scripts (which gave me 100 fps more than before lmfao)
-and im going to optimize the others. the trick is to use an IEnumerator to wait .2f seconds (0.2 seconds)
-in any update function. this reduces the amount of calls to the processor or whatever it needs to make
-and therefore reduces the amount of computational power required. Speeding the game up!
+Updated to version 2018.3.2f1, converted javascript code to c# which improved performance 
+big time. As of writing im currently trying to upgrade to postprocessing 2.0,
+after this i will be working on the title screen :D
