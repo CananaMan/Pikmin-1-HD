@@ -3,12 +3,12 @@
 Updated to version 2018.3.2f1, 
 converted javascript code to c#,
 updated postprocessing to 2.0,
-Fine tuned occlusion culling,
+fine tuned occlusion culling,
 and made proper light maps.
 
 # General / New:
 
-made shadow animations for the impact site,
+Made shadow animations for the impact site,
 started Pikmin testing again,
 finally removed third party assets and Neo's original project 'Pikmine',
 removed a bunch of unnecessary stuff,
@@ -19,9 +19,10 @@ optimized the .umbracache files, (occlusion culling) and removed about 5000 of t
 # Fine Tuning:
 
 Changed some normal map strengths so it looks better,
-Made the camera be closer and further away where necessary,
-Increased the speed of whistle expansion,
-Changed Pikmin collision detection type and AI detection.
+made the camera be closer and further away where necessary,
+increased the speed of whistle expansion,
+changed Pikmin collision detection type and AI detection,
+altered the postprocessing stack to use only Ambient Occlusion, Color Grading and Depth of field.
 
 # Fixes:
 
