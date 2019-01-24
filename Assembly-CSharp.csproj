@@ -61,10 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Other\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.cs" />
-    <Compile Include="Assets\Other\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Other\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Other\Pikmine\Test\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Scripts\DayManager\DayManager.cs" />
     <Compile Include="Assets\Scripts\Enemies\ChappyAIHandler.cs" />
     <Compile Include="Assets\Scripts\Enemies\ChappyAnimHandler.cs" />
