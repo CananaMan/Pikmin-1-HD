@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Olimar\PlatformInputController.cs" />
     <Compile Include="Assets\Scripts\Olimar\playerSingleton.cs" />
     <Compile Include="Assets\Scripts\Olimar\WhistleScript.cs" />
+    <Compile Include="Assets\Scripts\Other\FadeScreen\FadeCamera.cs" />
     <Compile Include="Assets\Scripts\Other\Logger.cs" />
     <Compile Include="Assets\Scripts\Other\Sun.cs" />
     <Compile Include="Assets\Scripts\Other\textBox.cs" />
@@ -127,6 +128,7 @@
     <None Include="Assets\Other\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
     <None Include="Assets\Other\PostProcessing\Shaders\Builtins\AutoExposure.compute" />
     <None Include="Assets\Other\PostProcessing\Shaders\Debug\Overlays.shader" />
+    <None Include="Assets\Scripts\Other\FadeScreen\FadeCameraShader.shader" />
     <None Include="Assets\Other\PostProcessing\Shaders\API\Metal.hlsl" />
     <None Include="Assets\Other\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
     <None Include="Assets\Other\PostProcessing\Shaders\Debug\Vectorscope.compute" />
