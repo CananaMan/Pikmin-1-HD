@@ -15,11 +15,11 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.01
-  m_LinearFogStart: 0
+  m_Fog: 1
+  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
+  m_FogMode: 1
+  m_FogDensity: 0.03
+  m_LinearFogStart: 50
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 9993121}
   - component: {fileID: 9993120}
   - component: {fileID: 9993126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (18)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &9993123
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -204,7 +204,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 9993118}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -213,7 +213,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 18077817}
   - component: {fileID: 18077816}
   - component: {fileID: 18077822}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (95)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 18077814}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -37.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 95
@@ -356,7 +356,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &18077819
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -366,7 +366,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 18077814}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -375,7 +375,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 99076813}
   - component: {fileID: 99076812}
   - component: {fileID: 99076818}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (31)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &99076815
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 99076810}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -570,7 +570,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 106663020}
   - component: {fileID: 106663019}
   - component: {fileID: 106663025}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (75)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -665,7 +665,7 @@ Transform:
   m_GameObject: {fileID: 106663017}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -37.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 75
@@ -713,7 +713,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &106663022
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -723,7 +723,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 106663017}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -732,7 +732,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 120847330}
   - component: {fileID: 120847329}
   - component: {fileID: 120847335}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (50)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &120847332
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -885,7 +885,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 120847327}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -894,7 +894,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 139088841}
   - component: {fileID: 139088840}
   - component: {fileID: 139088846}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (53)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &139088843
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1047,7 +1047,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 139088838}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -1056,7 +1056,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1135,7 +1135,7 @@ GameObject:
   - component: {fileID: 149672971}
   - component: {fileID: 149672970}
   - component: {fileID: 149672976}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (82)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ Transform:
   m_GameObject: {fileID: 149672968}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -40.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 82
@@ -1199,7 +1199,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &149672973
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1209,7 +1209,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 149672968}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -1218,7 +1218,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1297,7 +1297,7 @@ GameObject:
   - component: {fileID: 177537399}
   - component: {fileID: 177537398}
   - component: {fileID: 177537404}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (86)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -1313,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 177537396}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -36.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 86
@@ -1361,7 +1361,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &177537401
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1371,7 +1371,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 177537396}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -1380,7 +1380,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 222075382}
   - component: {fileID: 222075381}
   - component: {fileID: 222075387}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (2)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -1523,7 +1523,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &222075384
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1533,7 +1533,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 222075379}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -1542,7 +1542,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -1934,7 +1934,7 @@ GameObject:
   - component: {fileID: 260635152}
   - component: {fileID: 260635151}
   - component: {fileID: 260635157}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (85)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -1950,7 +1950,7 @@ Transform:
   m_GameObject: {fileID: 260635149}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -37.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 85
@@ -1998,7 +1998,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &260635154
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2008,7 +2008,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 260635149}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2017,7 +2017,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2096,7 +2096,7 @@ GameObject:
   - component: {fileID: 286659991}
   - component: {fileID: 286659990}
   - component: {fileID: 286659996}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (74)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -2112,7 +2112,7 @@ Transform:
   m_GameObject: {fileID: 286659988}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -39.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 74
@@ -2160,7 +2160,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &286659993
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2170,7 +2170,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 286659988}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2179,7 +2179,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2258,7 +2258,7 @@ GameObject:
   - component: {fileID: 294048025}
   - component: {fileID: 294048024}
   - component: {fileID: 294048030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (22)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -2322,7 +2322,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &294048027
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2332,7 +2332,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 294048022}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2341,7 +2341,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 307225935}
   - component: {fileID: 307225934}
   - component: {fileID: 307225940}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (87)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -2436,7 +2436,7 @@ Transform:
   m_GameObject: {fileID: 307225932}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -35.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 87
@@ -2484,7 +2484,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &307225937
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2494,7 +2494,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 307225932}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2503,7 +2503,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2582,7 +2582,7 @@ GameObject:
   - component: {fileID: 310370226}
   - component: {fileID: 310370225}
   - component: {fileID: 310370231}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (93)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -2598,7 +2598,7 @@ Transform:
   m_GameObject: {fileID: 310370223}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -38.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 93
@@ -2646,7 +2646,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &310370228
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2656,7 +2656,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 310370223}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2665,7 +2665,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2744,7 +2744,7 @@ GameObject:
   - component: {fileID: 322903140}
   - component: {fileID: 322903139}
   - component: {fileID: 322903145}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (35)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -2808,7 +2808,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &322903142
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2818,7 +2818,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 322903137}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2827,7 +2827,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 324473043}
   - component: {fileID: 324473042}
   - component: {fileID: 324473048}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (4)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -2970,7 +2970,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &324473045
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2980,7 +2980,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 324473040}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -2989,7 +2989,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -3068,7 +3068,7 @@ GameObject:
   - component: {fileID: 342433464}
   - component: {fileID: 342433463}
   - component: {fileID: 342433469}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (63)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -3132,7 +3132,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &342433466
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3142,7 +3142,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 342433461}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -3151,7 +3151,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -3230,7 +3230,7 @@ GameObject:
   - component: {fileID: 346846072}
   - component: {fileID: 346846071}
   - component: {fileID: 346846077}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (98)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -3246,7 +3246,7 @@ Transform:
   m_GameObject: {fileID: 346846069}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -34.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 98
@@ -3294,7 +3294,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &346846074
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3304,7 +3304,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 346846069}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -3313,7 +3313,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -3392,7 +3392,7 @@ GameObject:
   - component: {fileID: 350703986}
   - component: {fileID: 350703985}
   - component: {fileID: 350703991}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (29)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -3456,7 +3456,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &350703988
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3466,7 +3466,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 350703983}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -3475,7 +3475,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -3554,7 +3554,7 @@ GameObject:
   - component: {fileID: 402268940}
   - component: {fileID: 402268939}
   - component: {fileID: 402268945}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (62)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -3618,7 +3618,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &402268942
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3628,7 +3628,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 402268937}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -3637,7 +3637,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -3846,7 +3846,7 @@ GameObject:
   - component: {fileID: 435699156}
   - component: {fileID: 435699155}
   - component: {fileID: 435699161}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (61)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -3910,7 +3910,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &435699158
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3920,7 +3920,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 435699153}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -3929,7 +3929,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4008,7 +4008,7 @@ GameObject:
   - component: {fileID: 460720935}
   - component: {fileID: 460720934}
   - component: {fileID: 460720940}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (33)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -4072,7 +4072,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &460720937
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4082,7 +4082,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 460720932}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -4091,7 +4091,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4170,7 +4170,7 @@ GameObject:
   - component: {fileID: 461902009}
   - component: {fileID: 461902008}
   - component: {fileID: 461902014}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (70)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -4186,7 +4186,7 @@ Transform:
   m_GameObject: {fileID: 461902006}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -42.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 70
@@ -4234,7 +4234,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &461902011
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4244,7 +4244,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 461902006}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -4253,7 +4253,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4332,7 +4332,7 @@ GameObject:
   - component: {fileID: 474503065}
   - component: {fileID: 474503064}
   - component: {fileID: 474503070}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (21)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -4396,7 +4396,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &474503067
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4406,7 +4406,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 474503062}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -4415,7 +4415,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4494,7 +4494,7 @@ GameObject:
   - component: {fileID: 480283736}
   - component: {fileID: 480283735}
   - component: {fileID: 480283741}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (90)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -4510,7 +4510,7 @@ Transform:
   m_GameObject: {fileID: 480283733}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -42.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 90
@@ -4558,7 +4558,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &480283738
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4568,7 +4568,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 480283733}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -4577,7 +4577,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4656,7 +4656,7 @@ GameObject:
   - component: {fileID: 539721264}
   - component: {fileID: 539721263}
   - component: {fileID: 539721269}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (58)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -4720,7 +4720,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &539721266
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4730,7 +4730,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 539721261}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -4739,7 +4739,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4818,7 +4818,7 @@ GameObject:
   - component: {fileID: 544754788}
   - component: {fileID: 544754787}
   - component: {fileID: 544754793}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (23)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -4882,7 +4882,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &544754790
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4892,7 +4892,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 544754785}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -4901,7 +4901,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -4980,7 +4980,7 @@ GameObject:
   - component: {fileID: 565513402}
   - component: {fileID: 565513401}
   - component: {fileID: 565513407}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (11)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -5044,7 +5044,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &565513404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5054,7 +5054,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 565513399}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -5063,7 +5063,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -5142,7 +5142,7 @@ GameObject:
   - component: {fileID: 588848797}
   - component: {fileID: 588848796}
   - component: {fileID: 588848802}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (7)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -5206,7 +5206,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &588848799
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5216,7 +5216,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 588848794}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -5225,7 +5225,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -5304,7 +5304,7 @@ GameObject:
   - component: {fileID: 614081715}
   - component: {fileID: 614081714}
   - component: {fileID: 614081720}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (77)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -5320,7 +5320,7 @@ Transform:
   m_GameObject: {fileID: 614081712}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -35.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 77
@@ -5368,7 +5368,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &614081717
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5378,7 +5378,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 614081712}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -5387,7 +5387,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -5498,7 +5498,7 @@ GameObject:
   - component: {fileID: 621971071}
   - component: {fileID: 621971070}
   - component: {fileID: 621971076}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (55)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -5562,7 +5562,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &621971073
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5572,7 +5572,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 621971068}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -5581,7 +5581,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -5660,7 +5660,7 @@ GameObject:
   - component: {fileID: 623047471}
   - component: {fileID: 623047470}
   - component: {fileID: 623047476}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (43)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -5724,7 +5724,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &623047473
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5734,7 +5734,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 623047468}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -5743,7 +5743,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -5822,7 +5822,7 @@ GameObject:
   - component: {fileID: 638577369}
   - component: {fileID: 638577368}
   - component: {fileID: 638577374}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (24)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -5886,7 +5886,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &638577371
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5896,7 +5896,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 638577366}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -5905,7 +5905,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -5984,7 +5984,7 @@ GameObject:
   - component: {fileID: 642455510}
   - component: {fileID: 642455509}
   - component: {fileID: 642455515}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (96)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -6000,7 +6000,7 @@ Transform:
   m_GameObject: {fileID: 642455507}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -36.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 96
@@ -6048,7 +6048,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &642455512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6058,7 +6058,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 642455507}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -6067,7 +6067,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -6146,7 +6146,7 @@ GameObject:
   - component: {fileID: 657526802}
   - component: {fileID: 657526801}
   - component: {fileID: 657526807}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (19)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -6210,7 +6210,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &657526804
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6220,7 +6220,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 657526799}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -6229,7 +6229,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -6308,7 +6308,7 @@ GameObject:
   - component: {fileID: 690332049}
   - component: {fileID: 690332048}
   - component: {fileID: 690332054}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (76)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -6324,7 +6324,7 @@ Transform:
   m_GameObject: {fileID: 690332046}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -36.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 76
@@ -6372,7 +6372,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &690332051
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6382,7 +6382,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 690332046}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -6391,7 +6391,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -6476,7 +6476,7 @@ GameObject:
   - component: {fileID: 717258692}
   - component: {fileID: 717258691}
   - component: {fileID: 717258697}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (8)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -6540,7 +6540,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &717258694
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6550,7 +6550,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 717258689}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -6559,7 +6559,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -6638,7 +6638,7 @@ GameObject:
   - component: {fileID: 718798474}
   - component: {fileID: 718798473}
   - component: {fileID: 718798479}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (83)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -6654,7 +6654,7 @@ Transform:
   m_GameObject: {fileID: 718798471}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -38.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 83
@@ -6702,7 +6702,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &718798476
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6712,7 +6712,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 718798471}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -6721,7 +6721,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -6800,7 +6800,7 @@ GameObject:
   - component: {fileID: 792024493}
   - component: {fileID: 792024492}
   - component: {fileID: 792024498}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (12)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -6864,7 +6864,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &792024495
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6874,7 +6874,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 792024490}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -6883,7 +6883,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -6962,7 +6962,7 @@ GameObject:
   - component: {fileID: 794683272}
   - component: {fileID: 794683271}
   - component: {fileID: 794683277}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (9)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -7026,7 +7026,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &794683274
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7036,7 +7036,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 794683269}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -7045,7 +7045,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -7162,7 +7162,7 @@ GameObject:
   - component: {fileID: 803584207}
   - component: {fileID: 803584206}
   - component: {fileID: 803584212}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (69)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -7226,7 +7226,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &803584209
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7236,7 +7236,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 803584204}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -7245,7 +7245,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -7324,7 +7324,7 @@ GameObject:
   - component: {fileID: 829574361}
   - component: {fileID: 829574360}
   - component: {fileID: 829574366}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (64)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -7388,7 +7388,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &829574363
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7398,7 +7398,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 829574358}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -7407,7 +7407,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -7486,7 +7486,7 @@ GameObject:
   - component: {fileID: 867377002}
   - component: {fileID: 867377001}
   - component: {fileID: 867377007}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (48)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -7550,7 +7550,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &867377004
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7560,7 +7560,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 867376999}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -7569,7 +7569,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -7648,7 +7648,7 @@ GameObject:
   - component: {fileID: 895439985}
   - component: {fileID: 895439984}
   - component: {fileID: 895439990}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (38)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -7712,7 +7712,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &895439987
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7722,7 +7722,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 895439982}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -7731,7 +7731,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -7810,7 +7810,7 @@ GameObject:
   - component: {fileID: 901056343}
   - component: {fileID: 901056342}
   - component: {fileID: 901056348}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (1)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -7874,7 +7874,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &901056345
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7884,7 +7884,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 901056340}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -7893,7 +7893,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -7972,7 +7972,7 @@ GameObject:
   - component: {fileID: 903404538}
   - component: {fileID: 903404537}
   - component: {fileID: 903404543}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (14)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -8036,7 +8036,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &903404540
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8046,7 +8046,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 903404535}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -8055,7 +8055,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -8171,7 +8171,7 @@ GameObject:
   - component: {fileID: 961428014}
   - component: {fileID: 961428013}
   - component: {fileID: 961428019}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (88)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -8187,7 +8187,7 @@ Transform:
   m_GameObject: {fileID: 961428011}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -34.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 88
@@ -8235,7 +8235,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &961428016
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8245,7 +8245,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 961428011}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -8254,7 +8254,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -8333,7 +8333,7 @@ GameObject:
   - component: {fileID: 977296945}
   - component: {fileID: 977296944}
   - component: {fileID: 977296950}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (5)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -8397,7 +8397,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &977296947
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8407,7 +8407,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 977296942}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -8416,7 +8416,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -8495,7 +8495,7 @@ GameObject:
   - component: {fileID: 982718664}
   - component: {fileID: 982718663}
   - component: {fileID: 982718669}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (71)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -8511,7 +8511,7 @@ Transform:
   m_GameObject: {fileID: 982718661}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -41.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 71
@@ -8559,7 +8559,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &982718666
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8569,7 +8569,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 982718661}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -8578,7 +8578,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -8657,7 +8657,7 @@ GameObject:
   - component: {fileID: 986695367}
   - component: {fileID: 986695366}
   - component: {fileID: 986695372}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (60)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -8721,7 +8721,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &986695369
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8731,7 +8731,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 986695364}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -8740,7 +8740,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -8819,7 +8819,7 @@ GameObject:
   - component: {fileID: 1006988280}
   - component: {fileID: 1006988279}
   - component: {fileID: 1006988285}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (78)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -8835,7 +8835,7 @@ Transform:
   m_GameObject: {fileID: 1006988277}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -34.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 78
@@ -8883,7 +8883,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1006988282
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8893,7 +8893,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1006988277}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -8902,7 +8902,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -8981,7 +8981,7 @@ GameObject:
   - component: {fileID: 1012451685}
   - component: {fileID: 1012451684}
   - component: {fileID: 1012451690}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (56)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -9045,7 +9045,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1012451687
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9055,7 +9055,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1012451682}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -9064,7 +9064,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -9217,7 +9217,7 @@ GameObject:
   - component: {fileID: 1063469711}
   - component: {fileID: 1063469710}
   - component: {fileID: 1063469716}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (30)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -9281,7 +9281,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1063469713
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9291,7 +9291,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1063469708}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -9300,7 +9300,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -9523,7 +9523,7 @@ GameObject:
   - component: {fileID: 1090199437}
   - component: {fileID: 1090199436}
   - component: {fileID: 1090199442}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (81)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -9539,7 +9539,7 @@ Transform:
   m_GameObject: {fileID: 1090199434}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -41.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 81
@@ -9587,7 +9587,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1090199439
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9597,7 +9597,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1090199434}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -9606,7 +9606,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -9685,7 +9685,7 @@ GameObject:
   - component: {fileID: 1101589304}
   - component: {fileID: 1101589303}
   - component: {fileID: 1101589309}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (27)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -9749,7 +9749,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1101589306
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9759,7 +9759,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1101589301}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -9768,7 +9768,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -9847,7 +9847,7 @@ GameObject:
   - component: {fileID: 1104132699}
   - component: {fileID: 1104132698}
   - component: {fileID: 1104132704}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (45)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -9911,7 +9911,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1104132701
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9921,7 +9921,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1104132696}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -9930,7 +9930,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -10009,7 +10009,7 @@ GameObject:
   - component: {fileID: 1127469357}
   - component: {fileID: 1127469356}
   - component: {fileID: 1127469362}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (51)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -10073,7 +10073,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1127469359
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10083,7 +10083,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1127469354}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -10092,7 +10092,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -10171,7 +10171,7 @@ GameObject:
   - component: {fileID: 1170757526}
   - component: {fileID: 1170757525}
   - component: {fileID: 1170757531}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (20)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -10235,7 +10235,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1170757528
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10245,7 +10245,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1170757523}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -10254,7 +10254,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -10333,7 +10333,7 @@ GameObject:
   - component: {fileID: 1205798584}
   - component: {fileID: 1205798583}
   - component: {fileID: 1205798589}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (84)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -10349,7 +10349,7 @@ Transform:
   m_GameObject: {fileID: 1205798581}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -39.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 84
@@ -10397,7 +10397,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1205798586
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10407,7 +10407,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1205798581}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -10416,7 +10416,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -10490,13 +10490,33 @@ GameObject:
   - component: {fileID: 1228521641}
   - component: {fileID: 1228521640}
   - component: {fileID: 1228521639}
+  - component: {fileID: 1228521638}
   m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 64
   m_IsActive: 1
+--- !u!95 &1228521638
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228521637}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4ac6e18da3e77642ac474a7d82553d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &1228521639
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10508,7 +10528,7 @@ MeshRenderer:
   m_CastShadows: 3
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 2
+  m_MotionVectors: 0
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
@@ -10549,8 +10569,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228521637}
-  m_LocalRotation: {x: 0.2960372, y: 0.6421542, z: -0.6421542, w: 0.2960372}
-  m_LocalPosition: {x: -89.72438, y: 57.88, z: -10.066788}
+  m_LocalRotation: {x: 0.3095499, y: 0.6357507, z: -0.63575065, w: 0.3095499}
+  m_LocalPosition: {x: -96.52238, y: 57.88, z: -4.265574}
   m_LocalScale: {x: 276.25745, y: 364.48346, z: 1.0002015}
   m_Children: []
   m_Father: {fileID: 801953254}
@@ -10572,7 +10592,7 @@ GameObject:
   - component: {fileID: 1245245290}
   - component: {fileID: 1245245289}
   - component: {fileID: 1245245295}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (25)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -10636,7 +10656,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1245245292
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10646,7 +10666,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1245245287}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -10655,7 +10675,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -10734,7 +10754,7 @@ GameObject:
   - component: {fileID: 1388411928}
   - component: {fileID: 1388411927}
   - component: {fileID: 1388411933}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (10)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -10798,7 +10818,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1388411930
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10808,7 +10828,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1388411925}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -10817,7 +10837,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -11264,7 +11284,7 @@ GameObject:
   - component: {fileID: 1487001884}
   - component: {fileID: 1487001883}
   - component: {fileID: 1487001889}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (68)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -11328,7 +11348,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1487001886
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11338,7 +11358,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1487001881}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -11347,7 +11367,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -11425,7 +11445,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1497939630
 Transform:
@@ -11515,7 +11535,7 @@ GameObject:
   - component: {fileID: 1505876073}
   - component: {fileID: 1505876072}
   - component: {fileID: 1505876078}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (16)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -11579,7 +11599,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1505876075
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11589,7 +11609,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1505876070}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -11598,7 +11618,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -11677,7 +11697,7 @@ GameObject:
   - component: {fileID: 1529856570}
   - component: {fileID: 1529856569}
   - component: {fileID: 1529856575}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (67)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -11741,7 +11761,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1529856572
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11751,7 +11771,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1529856567}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -11760,7 +11780,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -11839,7 +11859,7 @@ GameObject:
   - component: {fileID: 1552733775}
   - component: {fileID: 1552733774}
   - component: {fileID: 1552733780}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (34)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -11903,7 +11923,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1552733777
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11913,7 +11933,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1552733772}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -11922,7 +11942,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -12007,7 +12027,7 @@ GameObject:
   - component: {fileID: 1564302495}
   - component: {fileID: 1564302494}
   - component: {fileID: 1564302500}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (49)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -12071,7 +12091,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1564302497
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12081,7 +12101,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1564302492}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -12090,7 +12110,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -12169,7 +12189,7 @@ GameObject:
   - component: {fileID: 1568078472}
   - component: {fileID: 1568078471}
   - component: {fileID: 1568078477}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (42)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -12233,7 +12253,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1568078474
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12243,7 +12263,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1568078469}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -12252,7 +12272,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -12397,7 +12417,7 @@ GameObject:
   - component: {fileID: 1580366079}
   - component: {fileID: 1580366078}
   - component: {fileID: 1580366084}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (17)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -12461,7 +12481,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1580366081
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12471,7 +12491,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1580366076}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -12480,7 +12500,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -12559,7 +12579,7 @@ GameObject:
   - component: {fileID: 1588813544}
   - component: {fileID: 1588813543}
   - component: {fileID: 1588813549}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (54)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -12623,7 +12643,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1588813546
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12633,7 +12653,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1588813541}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -12642,7 +12662,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -12821,7 +12841,7 @@ GameObject:
   - component: {fileID: 1603747790}
   - component: {fileID: 1603747789}
   - component: {fileID: 1603747795}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (39)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -12885,7 +12905,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1603747792
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12895,7 +12915,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1603747787}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -12904,7 +12924,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -13052,7 +13072,7 @@ GameObject:
   - component: {fileID: 1618081897}
   - component: {fileID: 1618081896}
   - component: {fileID: 1618081902}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (72)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -13068,7 +13088,7 @@ Transform:
   m_GameObject: {fileID: 1618081894}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -40.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 72
@@ -13116,7 +13136,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1618081899
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13126,7 +13146,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1618081894}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -13135,7 +13155,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -13325,6 +13345,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[4]
       value: 
       objectReference: {fileID: 2100000, guid: bd1bb6dc81ed81b46a9d367e915ef99a, type: 2}
+    - target: {fileID: 13700000, guid: 6f28942b5f4343f459d2bf8b91ebb830, type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd1bb6dc81ed81b46a9d367e915ef99a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f28942b5f4343f459d2bf8b91ebb830, type: 3}
 --- !u!1 &1633125897
@@ -13343,7 +13367,7 @@ GameObject:
   - component: {fileID: 1633125900}
   - component: {fileID: 1633125899}
   - component: {fileID: 1633125905}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (41)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -13407,7 +13431,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1633125902
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13417,7 +13441,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1633125897}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -13426,7 +13450,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -13505,7 +13529,7 @@ GameObject:
   - component: {fileID: 1685759665}
   - component: {fileID: 1685759664}
   - component: {fileID: 1685759670}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (26)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -13569,7 +13593,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1685759667
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13579,7 +13603,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1685759662}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -13588,7 +13612,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -13667,7 +13691,7 @@ GameObject:
   - component: {fileID: 1692142757}
   - component: {fileID: 1692142756}
   - component: {fileID: 1692142762}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (73)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -13683,7 +13707,7 @@ Transform:
   m_GameObject: {fileID: 1692142754}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -38.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 73
@@ -13731,7 +13755,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1692142759
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13741,7 +13765,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1692142754}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -13750,7 +13774,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -13849,7 +13873,7 @@ GameObject:
   - component: {fileID: 1710018449}
   - component: {fileID: 1710018448}
   - component: {fileID: 1710018454}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (66)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -13913,7 +13937,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1710018451
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13923,7 +13947,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1710018446}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -13932,7 +13956,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -14204,7 +14228,7 @@ GameObject:
   - component: {fileID: 1720712097}
   - component: {fileID: 1720712096}
   - component: {fileID: 1720712102}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (59)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -14268,7 +14292,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1720712099
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14278,7 +14302,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1720712094}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -14287,7 +14311,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -14366,7 +14390,7 @@ GameObject:
   - component: {fileID: 1741502506}
   - component: {fileID: 1741502505}
   - component: {fileID: 1741502511}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (65)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -14430,7 +14454,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1741502508
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14440,7 +14464,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1741502503}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -14449,7 +14473,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -14528,7 +14552,7 @@ GameObject:
   - component: {fileID: 1750721739}
   - component: {fileID: 1750721738}
   - component: {fileID: 1750721744}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (99)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -14544,7 +14568,7 @@ Transform:
   m_GameObject: {fileID: 1750721736}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -33.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 99
@@ -14592,7 +14616,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1750721741
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14602,7 +14626,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1750721736}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -14611,7 +14635,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -14690,7 +14714,7 @@ GameObject:
   - component: {fileID: 1751509765}
   - component: {fileID: 1751509764}
   - component: {fileID: 1751509770}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (37)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -14754,7 +14778,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1751509767
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14764,7 +14788,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1751509762}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -14773,7 +14797,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -14864,7 +14888,7 @@ GameObject:
   - component: {fileID: 1780005165}
   - component: {fileID: 1780005164}
   - component: {fileID: 1780005170}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (79)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -14880,7 +14904,7 @@ Transform:
   m_GameObject: {fileID: 1780005162}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 60.318787, y: 52.985123, z: -33.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 79
@@ -14928,7 +14952,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1780005167
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14938,7 +14962,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1780005162}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -14947,7 +14971,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -15026,7 +15050,7 @@ GameObject:
   - component: {fileID: 1789713700}
   - component: {fileID: 1789713699}
   - component: {fileID: 1789713705}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (44)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -15090,7 +15114,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1789713702
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15100,7 +15124,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1789713697}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -15109,7 +15133,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -15188,7 +15212,7 @@ GameObject:
   - component: {fileID: 1819588543}
   - component: {fileID: 1819588542}
   - component: {fileID: 1819588548}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (92)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -15204,7 +15228,7 @@ Transform:
   m_GameObject: {fileID: 1819588540}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -40.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 92
@@ -15252,7 +15276,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1819588545
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15262,7 +15286,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1819588540}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -15271,7 +15295,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -15395,7 +15419,7 @@ GameObject:
   - component: {fileID: 1830685402}
   - component: {fileID: 1830685401}
   - component: {fileID: 1830685407}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (40)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -15459,7 +15483,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1830685404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15469,7 +15493,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1830685399}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -15478,7 +15502,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -15557,7 +15581,7 @@ GameObject:
   - component: {fileID: 1839283509}
   - component: {fileID: 1839283508}
   - component: {fileID: 1839283514}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (97)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -15573,7 +15597,7 @@ Transform:
   m_GameObject: {fileID: 1839283506}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -35.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 97
@@ -15621,7 +15645,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1839283511
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15631,7 +15655,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1839283506}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -15640,7 +15664,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -15719,7 +15743,7 @@ GameObject:
   - component: {fileID: 1850740600}
   - component: {fileID: 1850740599}
   - component: {fileID: 1850740605}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (32)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -15783,7 +15807,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1850740602
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15793,7 +15817,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1850740597}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -15802,7 +15826,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -15881,7 +15905,7 @@ GameObject:
   - component: {fileID: 1851011773}
   - component: {fileID: 1851011772}
   - component: {fileID: 1851011778}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (47)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -15945,7 +15969,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1851011775
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15955,7 +15979,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1851011770}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -15964,7 +15988,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -16043,7 +16067,7 @@ GameObject:
   - component: {fileID: 1884203724}
   - component: {fileID: 1884203723}
   - component: {fileID: 1884203729}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (89)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -16059,7 +16083,7 @@ Transform:
   m_GameObject: {fileID: 1884203721}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -33.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 89
@@ -16107,7 +16131,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1884203726
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16117,7 +16141,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1884203721}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -16126,7 +16150,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -16205,7 +16229,7 @@ GameObject:
   - component: {fileID: 1914931319}
   - component: {fileID: 1914931318}
   - component: {fileID: 1914931324}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (52)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -16269,7 +16293,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1914931321
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16279,7 +16303,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1914931316}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -16288,7 +16312,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -16386,7 +16410,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &1928033632
 CapsuleCollider:
@@ -16432,7 +16456,7 @@ GameObject:
   - component: {fileID: 1941635631}
   - component: {fileID: 1941635630}
   - component: {fileID: 1941635636}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (91)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -16448,7 +16472,7 @@ Transform:
   m_GameObject: {fileID: 1941635628}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -41.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 91
@@ -16496,7 +16520,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1941635633
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16506,7 +16530,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1941635628}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -16515,7 +16539,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -16594,7 +16618,7 @@ GameObject:
   - component: {fileID: 1966083182}
   - component: {fileID: 1966083181}
   - component: {fileID: 1966083187}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (36)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -16658,7 +16682,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1966083184
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16668,7 +16692,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1966083179}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -16677,7 +16701,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -16756,7 +16780,7 @@ GameObject:
   - component: {fileID: 1985160445}
   - component: {fileID: 1985160444}
   - component: {fileID: 1985160450}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (94)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -16772,7 +16796,7 @@ Transform:
   m_GameObject: {fileID: 1985160442}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 58.32, y: 52.985123, z: -39.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 94
@@ -16820,7 +16844,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1985160447
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16830,7 +16854,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1985160442}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -16839,7 +16863,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -16918,7 +16942,7 @@ GameObject:
   - component: {fileID: 1990312367}
   - component: {fileID: 1990312366}
   - component: {fileID: 1990312372}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (46)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -16982,7 +17006,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1990312369
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16992,7 +17016,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1990312364}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17001,7 +17025,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -17080,7 +17104,7 @@ GameObject:
   - component: {fileID: 1994328636}
   - component: {fileID: 1994328635}
   - component: {fileID: 1994328641}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (15)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -17144,7 +17168,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &1994328638
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17154,7 +17178,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1994328633}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17163,7 +17187,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -17242,7 +17266,7 @@ GameObject:
   - component: {fileID: 2018587121}
   - component: {fileID: 2018587120}
   - component: {fileID: 2018587126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (3)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -17306,7 +17330,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &2018587123
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17316,7 +17340,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2018587118}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17325,7 +17349,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -17404,7 +17428,7 @@ GameObject:
   - component: {fileID: 2019598379}
   - component: {fileID: 2019598378}
   - component: {fileID: 2019598384}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (13)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -17468,7 +17492,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &2019598381
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17478,7 +17502,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2019598376}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17487,7 +17511,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -17566,7 +17590,7 @@ GameObject:
   - component: {fileID: 2019940687}
   - component: {fileID: 2019940686}
   - component: {fileID: 2019940692}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (57)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -17630,7 +17654,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &2019940689
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17640,7 +17664,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2019940684}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17649,7 +17673,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -17728,7 +17752,7 @@ GameObject:
   - component: {fileID: 2049105700}
   - component: {fileID: 2049105699}
   - component: {fileID: 2049105705}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (28)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -17792,7 +17816,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &2049105702
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17802,7 +17826,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2049105697}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17811,7 +17835,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -17890,7 +17914,7 @@ GameObject:
   - component: {fileID: 2061627195}
   - component: {fileID: 2061627194}
   - component: {fileID: 2061627200}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (6)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -17954,7 +17978,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &2061627197
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17964,7 +17988,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2061627192}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -17973,7 +17997,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -18131,7 +18155,7 @@ GameObject:
   - component: {fileID: 2133742481}
   - component: {fileID: 2133742480}
   - component: {fileID: 2133742486}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest (80)
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -18147,7 +18171,7 @@ Transform:
   m_GameObject: {fileID: 2133742478}
   m_LocalRotation: {x: -0, y: 0.3313374, z: -0, w: 0.94351244}
   m_LocalPosition: {x: 59.32, y: 52.985123, z: -42.11}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 417645352}
   m_RootOrder: 80
@@ -18195,7 +18219,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!195 &2133742483
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18205,7 +18229,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2133742478}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -18214,7 +18238,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -18277,6 +18301,80 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.0000038146973, z: 0}
+--- !u!1001 &1090392806355346875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1090392806417508301, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 118.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 63.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -262.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.123221554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.27003843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03486819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95429546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.715001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -31.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508290, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090392806417508288, guid: 73c58c9ee071e974fba2d305405132ac,
+        type: 3}
+      propertyPath: myTarget
+      value: 
+      objectReference: {fileID: 1756436151}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73c58c9ee071e974fba2d305405132ac, type: 3}
 --- !u!1001 &2157096212918765107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18373,6 +18471,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: pikminTest
       objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757785, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757785, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2969918539280757862, guid: ce7bd46c1491b844bb8f437de6445525,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18427,6 +18535,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757862, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757862, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757862, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757860, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757863, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757863, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757863, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969918539280757856, guid: ce7bd46c1491b844bb8f437de6445525,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce7bd46c1491b844bb8f437de6445525, type: 3}
@@ -18491,80 +18639,6 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 34c47b84d1e4f4447a05a4cadaf9bd4b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}
---- !u!1001 &4310484803899870148
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4310484803971467698, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_Name
-      value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 118.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 63.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -262.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.123221554
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.27003843
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.03486819
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.95429546
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 14.715001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -31.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467709, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310484803971467711, guid: 73c58c9ee071e974fba2d305405132ac,
-        type: 3}
-      propertyPath: myTarget
-      value: 
-      objectReference: {fileID: 1756436151}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73c58c9ee071e974fba2d305405132ac, type: 3}
 --- !u!1001 &4877902964731275843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18631,6 +18705,58 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964526707616, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: expandSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964285986442, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 22dcf12b8a5051048970e1005eb586b2,
+        type: 3}
+    - target: {fileID: 4877902964285986442, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964285986442, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964285986442, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964575896212, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cd28044b1417d04fb328daf9e09c78f, type: 2}
+    - target: {fileID: 4877902964575896212, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26f18a3ba7778c249869f0043a33721f,
+        type: 3}
+    - target: {fileID: 4877902964575896212, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964575896212, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1651975143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877902964575896212, guid: 62983df00aa996242b0bd4e600060cd1,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62983df00aa996242b0bd4e600060cd1, type: 3}

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FileSelectController : MonoBehaviour {
 
     public Button[] buttons;
     public GameObject canvas;
+    public bool skipMovie;
     private Animator anim;
     private bool loadingLevel;
 
@@ -20,17 +22,12 @@ public class FileSelectController : MonoBehaviour {
 
     void whenClicked(Button[] buttons, int index)
     {
-        StartCoroutine(whenClickedMainFunc());
+        StartCoroutine(whenClickedMainFunc(index)); // start the ienumerator
     }
 
-    void loadFilm()
+    IEnumerator whenClickedMainFunc(int index)
     {
-
-    }
-
-    IEnumerator whenClickedMainFunc()
-    {
-        GameObject currButton = buttons[index].gameObject; // get current button gameobject using buttons[index (number)].gameObject
+        GameObject currButton = buttons[index].gameObject; // get current button gameobject using buttons[index (which is a number)].gameObject
         anim = currButton.GetComponent<Animator>(); // get its animator
         anim.SetBool("Clicked", true); // clicked
         yield return new WaitForSeconds(.1f);
@@ -41,7 +38,25 @@ public class FileSelectController : MonoBehaviour {
         yield return new WaitForSeconds(.5f); // wait for animation to play 
         FadeCamera.instance.FadeOut(); // fade out
         yield return new WaitForSeconds(1f); // wait until faded to black
+        if (skipMovie)
+        {
+            StartCoroutine(LoadImpactSite());
+        }
+        else
+        {
+            canvas.SetActive(false);
+            //add start movie functionality here :D
+        }
+    }
 
+    IEnumerator LoadImpactSite()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Scenes/ImpactSite");
 
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }

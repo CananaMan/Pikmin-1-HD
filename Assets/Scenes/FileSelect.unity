@@ -604,6 +604,8 @@ MonoBehaviour:
   - {fileID: 1199633522}
   - {fileID: 1866993582}
   - {fileID: 2062732026}
+  canvas: {fileID: 56912884}
+  skipMovie: 0
 --- !u!224 &1048195640
 RectTransform:
   m_ObjectHideFlags: 0

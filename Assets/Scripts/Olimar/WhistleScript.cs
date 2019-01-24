@@ -11,7 +11,7 @@ public class WhistleScript : MonoBehaviour
 	public float whistleRotationSpeed = 45f; // the rotation speed of the whistle particles.
 	public GameObject whistleParticles; // the particles of the whistle.
     // References
-    private playerSingleton player;
+    private CharacterMotor player;
 	//private ParticleSystem whistleParticleSys; // the particle system of the whistle.
     // Properties
     private bool isOn; // true when we're whistling!
@@ -27,10 +27,10 @@ public class WhistleScript : MonoBehaviour
     {
         //Olimar Stuff
         if (GameObject.Find("Olimar") == null)
-            player = GameObject.Find("Player").GetComponent<playerSingleton>();
+            player = GameObject.Find("Player").GetComponent<CharacterMotor>();
 
         if (GameObject.Find("Player") == null)
-            player = GameObject.Find("Olimar").GetComponent<playerSingleton>();
+            player = GameObject.Find("Olimar").GetComponent<CharacterMotor>();
         
         //Neos particle stuff
         //whistleParticleSys = GetComponentInChildren<ParticleSystem> ();
@@ -92,10 +92,10 @@ public class WhistleScript : MonoBehaviour
     void MoveToGroundY()
     {
         RaycastHit groundHit;
-        /*if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
+        if (Physics.Raycast(player.transform.position, Vector3.down, out groundHit))
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y - groundHit.distance + 0.1f, transform.localPosition.z);
-        }*/
+        }
         if (Physics.Raycast(this.transform.position, Vector3.up, out groundHit))
         {
             transform.localPosition = new Vector3(transform.localPosition.x, player.transform.position.y + groundHit.distance + 0.1f, transform.localPosition.z);

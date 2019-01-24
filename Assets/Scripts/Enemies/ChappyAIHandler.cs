@@ -21,7 +21,7 @@ public class ChappyAIHandler : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        target = playerSingleton.instance.player.gameObject.transform;
+        target = CharacterMotor.instance.player.gameObject.transform;
         agent = GetComponent<NavMeshAgent>();
 	}
 

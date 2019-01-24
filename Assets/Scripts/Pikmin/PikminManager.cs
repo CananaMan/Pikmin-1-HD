@@ -25,7 +25,7 @@ public class PikminManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        foreach (Transform t in playerSingleton.instance.player.gameObject.transform)
+        foreach (Transform t in CharacterMotor.instance.player.gameObject.transform)
         {
             if (t.name == "PikminPoint")
             {

@@ -69,7 +69,6 @@
     <Compile Include="Assets\Scripts\Olimar\CharacterMotor.cs" />
     <Compile Include="Assets\Scripts\Olimar\OlimarCam.cs" />
     <Compile Include="Assets\Scripts\Olimar\PlatformInputController.cs" />
-    <Compile Include="Assets\Scripts\Olimar\playerSingleton.cs" />
     <Compile Include="Assets\Scripts\Olimar\WhistleScript.cs" />
     <Compile Include="Assets\Scripts\Other\FadeScreen\FadeCamera.cs" />
     <Compile Include="Assets\Scripts\Other\Logger.cs" />

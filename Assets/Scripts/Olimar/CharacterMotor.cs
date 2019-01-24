@@ -1,12 +1,6 @@
 using UnityEngine;
 using System.Collections;
 
-// Does this script currently respond to input?
-// For the next variables, @System.NonSerialized tells Unity to not serialize the variable or show it in the inspector view.
-// Very handy for organization!
-// The current global direction we want the character to move in.
-// Is the jump button held down? We use this interface instead of checking
-// for the jump button directly so this script can also be used by AIs.
 [System.Serializable]
 public class CharacterMotorMovement : object
 {
@@ -156,76 +150,11 @@ public class CharacterMotorSliding : object
 
 }
 [System.Serializable]
-// We copy the actual velocity into a temporary variable that we can manipulate.
-// Update velocity based on input
-// Apply gravity and jumping force
-// Moving platform support
-// Support moving platform rotation as well:
-// Prevent rotation of the local up vector
-// Save lastPosition for velocity calculation.
-// We always want the movement to be framerate independent.  Multiplying by Time.deltaTime does this.
-// Find out how much we need to push towards the ground to avoid loosing grouning
-// when walking down a step or over a sharp change in slope.
-// Reset variables that will be set by collision function
-// Move our character!
-// Calculate the velocity based on the current and previous position.  
-// This means our velocity will only be the amount the character actually moved as a result of collisions.
-// The CharacterController can be moved in unwanted directions when colliding with things.
-// We want to prevent this from influencing the recorded velocity.
-// Something is forcing the CharacterController down faster than it should.
-// Ignore this
-// The upwards movement of the CharacterController has been blocked.
-// This is treated like a ceiling collision - stop further jumping here.
-// We were grounded but just loosed grounding
-// Apply inertia from platform
-// We pushed the character down to ensure it would stay on the ground if there was any.
-// But there wasn't so now we cancel the downwards offset to make the fall smoother.
-// We were not grounded but just landed on something
-// Moving platforms support
-// Use the center of the lower half sphere of the capsule as reference point.
-// This works best when the character is standing on moving tilting platforms. 
-// Support moving platform rotation as well:
-// Find desired velocity
-// The direction we're sliding in
-// Find the input movement direction projected onto the sliding direction
-// Add the sliding direction, the spped control, and the sideways control vectors
-// Multiply with the sliding speed
-// Enforce max velocity change
-// If we're in the air and don't have control, don't apply any velocity change at all.
-// If we're on the ground and don't have control we do apply it - it will correspond to friction.
-// When going uphill, the CharacterController will automatically move up by the needed amount.
-// Not moving it upwards manually prevent risk of lifting off from the ground.
-// When going downhill, DO move down manually, as gravity is not enough on steep hills.
-// When jumping up we don't apply gravity for some time when the user is holding the jump button.
-// This gives more control over jump height by pressing the button longer.
-// Calculate the duration that the extra jump force should have effect.
-// If we're still less than that duration after the jumping time, apply the force.
-// Negate the gravity we just applied, except we push in jumpDir rather than jump upwards.
-// Make sure we don't fall any faster than maxFallSpeed. This gives our character a terminal velocity.
-// Jump only if the jump button was pressed down in the last 0.2 seconds.
-// We use this check instead of checking if it's pressed down right now
-// because players will often try to jump in the exact moment when hitting the ground after a jump
-// and if they hit the button a fraction of a second too soon and no new jump happens as a consequence,
-// it's confusing and it feels like the game is buggy.
-// Calculate the jumping direction
-// Apply the jumping force to the velocity. Cancel any vertical velocity first.
-// Apply inertia from platform
-// When landing, subtract the velocity of the new ground from the character's velocity
-// since movement in ground is relative to the movement of the ground.
- // If we landed on a new platform, we have to wait for two FixedUpdates
- // before we know the velocity of the platform under the character
-// Find desired velocity
-// Modify max speed on slopes based on slope speed multiplier curve
-// Maximum acceleration on ground and in air
-// From the jump height and gravity we deduce the upwards speed 
-// for the character to reach at the apex.
-// Project a direction onto elliptical quater segments based on forward, sideways, and backwards speed.
-// The function returns the length of the resulting vector.
-// Require a character controller to be attached to the same game object
 [UnityEngine.RequireComponent(typeof(CharacterController))]
 [UnityEngine.AddComponentMenu("Character/Character Motor")]
 public partial class CharacterMotor : MonoBehaviour
 {
+    public GameObject player;
     public bool canControl;
     public bool useFixedUpdate;
     [System.NonSerialized]
@@ -243,11 +172,21 @@ public partial class CharacterMotor : MonoBehaviour
     private Vector3 lastGroundNormal;
     private Transform tr;
     private CharacterController controller;
+
+    #region Singleton
+    public static CharacterMotor instance;
+    void Start()
+    {
+        player = this.gameObject;
+    }
+
     public virtual void Awake()
     {
-        this.controller = (CharacterController) this.GetComponent(typeof(CharacterController));
+        instance = this;
+        this.controller = (CharacterController)this.GetComponent(typeof(CharacterController));
         this.tr = this.transform;
     }
+    #endregion
 
     private void UpdateFunction()
     {

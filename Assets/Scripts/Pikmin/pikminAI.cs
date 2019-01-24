@@ -11,7 +11,7 @@ public class pikminAI : MonoBehaviour {
     NavMeshAgent agent;
 	// Use this for initialization
 	void Start () {
-        foreach (Transform t in playerSingleton.instance.player.gameObject.transform)
+        foreach (Transform t in CharacterMotor.instance.player.gameObject.transform)
         {
             if (t.name == "PikminPoint")
             {
@@ -20,7 +20,7 @@ public class pikminAI : MonoBehaviour {
             }
             else
             {
-                playerT = playerSingleton.instance.player.gameObject.transform;
+                playerT = CharacterMotor.instance.player.gameObject.transform;
             }
         }
         agent = GetComponent<NavMeshAgent>();
@@ -36,8 +36,8 @@ public class pikminAI : MonoBehaviour {
         {
             if (isFlower)
             {
-                agent.acceleration = 12;
-                agent.speed = 8;
+                agent.acceleration = 16;
+                agent.speed = 14;
             }
             agent.enabled = true;
             agent.SetDestination(playerT.position);
