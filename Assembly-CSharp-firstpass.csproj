@@ -98,18 +98,17 @@
     <None Include="Assets\Standard Assets\UnityHDRI\Seaside\Info.txt" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
-    <None Include="Assets\Standard Assets\UnityHDRI\MuirWood\Info.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/UnityPROJECT/Fookin around/Pikmin 1 HD/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
