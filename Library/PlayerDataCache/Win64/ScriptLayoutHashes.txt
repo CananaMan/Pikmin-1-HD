@@ -142,7 +142,7 @@ e07911530ca9377989c3404aa602d17b Assembly-CSharp.dll:.ChappyAnimHandler
 0574135745ea880aa1c1be2f2057ab89 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ActivateTrigger
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 5f93aa9d46beca8342d0af5c30ebda50 Assembly-CSharp.dll:.PlatformInputController
-b90986300c937b5786cc6a722184e50b Assembly-CSharp.dll:.pikminDetect
+a0b3495817ffd6bb8a90924779df4763 Assembly-CSharp.dll:.pikminDetect
 a4d879eed97e8d86fd752672fc026fa2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMoveAndRotate
 e25812fd2b3917c146308fed77158f5d Assembly-CSharp.dll:.Logger
 f8bd7a92bf9f22d289759689ae7b1fd4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SmoothFollow

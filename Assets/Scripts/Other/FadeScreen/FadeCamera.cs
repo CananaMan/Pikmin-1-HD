@@ -23,11 +23,6 @@ public class FadeCamera : MonoBehaviour
 	private float duration = 0;
 	private bool isFading = false;
 
-    void Start()
-    {
-        material = new Material(Shader.Find("Hidden/FadeCameraShader"));
-    }
-
 	public void FadeIn (float duration = 3)
 	{
 		this.duration = duration;
