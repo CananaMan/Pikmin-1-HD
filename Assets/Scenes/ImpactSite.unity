@@ -20048,11 +20048,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2157096213448997120, guid: 01c10d5c91c0fd943ba2b1415baa4aaf,
-        type: 3}
-      propertyPath: dayImage
-      value: 
-      objectReference: {fileID: 1014704557}
     - target: {fileID: 2157096213448997126, guid: 01c10d5c91c0fd943ba2b1415baa4aaf,
         type: 3}
       propertyPath: PikminArrangementObjects.Array.data[0]
@@ -20063,6 +20058,11 @@ PrefabInstance:
       propertyPath: PikminArrangementObjects.Array.data[1]
       value: 
       objectReference: {fileID: 933931022}
+    - target: {fileID: 2157096213448997120, guid: 01c10d5c91c0fd943ba2b1415baa4aaf,
+        type: 3}
+      propertyPath: dayImage
+      value: 
+      objectReference: {fileID: 1014704557}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01c10d5c91c0fd943ba2b1415baa4aaf, type: 3}
 --- !u!1001 &2969918539760984868
@@ -20237,6 +20237,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1756436151, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756436149, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}
+      propertyPath: m_Extents.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756436149, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}
+      propertyPath: m_Extents.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756436149, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}
+      propertyPath: m_Extents.y
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756436149, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}
+      propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1756436148, guid: d236c36cd22cde84483f0970bd65ab8d, type: 3}

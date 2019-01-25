@@ -7,15 +7,6 @@ public class PikminManager : MonoBehaviour {
     public static PikminManager instance;
     void Awake()
     {
-        foreach (Transform t in CharacterMotor.instance.player.gameObject.transform)
-        {
-            if (t.name == "PikminPoint")
-            {
-                PikminPoint = t;
-                break;
-            }
-        }
-        PikminPoint.transform.position = PikminArrangementObjects[0].transform.position;
         instance = this;
         manager = this.gameObject;
     }
@@ -33,6 +24,15 @@ public class PikminManager : MonoBehaviour {
 
     void Start()
     {
+        foreach (Transform t in CharacterMotor.instance.player.gameObject.transform)
+        {
+            if (t.name == "PikminPoint")
+            {
+                PikminPoint = t;
+                break;
+            }
+        }
+        PikminPoint.transform.position = PikminArrangementObjects[0].transform.position;
         paid = pikminDetect.instance;
         InvokeRepeating("checkPikCount", .1f, .1f);
     }

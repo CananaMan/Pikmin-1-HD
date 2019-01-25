@@ -12,7 +12,6 @@ public class pikminAI : MonoBehaviour {
     [HideInInspector]
     public NavMeshAgent agent;
 
-
     #region Singleton
     public static pikminAI instance;
     void Awake()
@@ -37,13 +36,14 @@ public class pikminAI : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
         agent.enabled = false;
     }
-	
-	void FixedUpdate () {
-		StartCoroutine(pikChecks());
-	}
-    
+
+    void FixedUpdate()
+    {
+        StartCoroutine(pikChecks());
+    }
+
 	IEnumerator pikChecks() {
-		if (isWithPlayer)
+        if (isWithPlayer)
         {
             if (isFlower)
             {
@@ -59,13 +59,13 @@ public class pikminAI : MonoBehaviour {
 		}
 		
 	}
-	
+
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
             isWithPlayer = true;
-            pikminDetect.instance.gameObject.GetComponent<pikminDetect>().insertPikmin(pikminDetect.instance.gameObject.GetComponent<pikminDetect>().pikminCount, this.gameObject, null);
+            pikminDetect.instance.insertPikmin(this.gameObject, this.gameObject);
         }
     }
 }

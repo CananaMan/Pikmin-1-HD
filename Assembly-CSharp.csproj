@@ -74,7 +74,6 @@
     <Compile Include="Assets\Scripts\Other\Sun.cs" />
     <Compile Include="Assets\Scripts\Other\textBox.cs" />
     <Compile Include="Assets\Scripts\Other\TutoManagerImpactSite.cs" />
-    <Compile Include="Assets\Scripts\Pikmin\formationMgr.cs" />
     <Compile Include="Assets\Scripts\Pikmin\pikminAI.cs" />
     <Compile Include="Assets\Scripts\Pikmin\pikminDetect.cs" />
     <Compile Include="Assets\Scripts\Pikmin\PikminManager.cs" />

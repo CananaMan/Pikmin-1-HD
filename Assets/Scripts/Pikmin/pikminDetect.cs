@@ -17,7 +17,12 @@ public class pikminDetect : MonoBehaviour {
     }
     #endregion
 
-    public void insertPikmin(int count, GameObject pikmin, GameObject colGameObject)
+    void Start()
+    {
+        pikminSquad = PikminManager.instance.pikminInSquad;
+    }
+
+    public void insertPikmin(GameObject pikmin, GameObject colGameObject)
     {
         // check for the pikmin instance in the array
         if (pikminSquad.Contains(colGameObject))
@@ -30,14 +35,9 @@ public class pikminDetect : MonoBehaviour {
             return;
         }
         colGameObject.GetComponent<pikminAI>().isWithPlayer = true;
-        pikminSquad.Insert(count, pikmin);
+        pikminSquad.Insert(pikminCount, pikmin);
         pikminCount++;
         
-    }
-
-    void Start()
-    {
-        pikminSquad = PikminManager.instance.manager.gameObject.GetComponent<PikminManager>().pikminInSquad;
     }
 
     void OnTriggerEnter(Collider col)
@@ -45,7 +45,7 @@ public class pikminDetect : MonoBehaviour {
         GameObject colGameObject = col.gameObject;
         if (colGameObject.tag == "Pikmin")
         {
-            insertPikmin(pikminCount, colGameObject, colGameObject);
+            insertPikmin(colGameObject, colGameObject);
         }
     }
 }
