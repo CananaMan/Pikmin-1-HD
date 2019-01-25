@@ -22,7 +22,6 @@ public class pikminDetect : MonoBehaviour {
         // check for the pikmin instance in the array
         if (pikminSquad.Contains(colGameObject))
         {
-            print("already in squad");
             colGameObject = null;
             return;
         }

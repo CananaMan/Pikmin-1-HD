@@ -7,6 +7,12 @@ public class pikminAI : MonoBehaviour {
     public bool isWithPlayer = false;
     public bool isFlower = true;
 
+    [HideInInspector]
+    public Transform playerT;
+    [HideInInspector]
+    public NavMeshAgent agent;
+
+
     #region Singleton
     public static pikminAI instance;
     void Awake()
@@ -15,10 +21,7 @@ public class pikminAI : MonoBehaviour {
     }
     #endregion
 
-    Transform playerT;
-    NavMeshAgent agent;
-	// Use this for initialization
-	void Start () {
+    void Start () {
         foreach (Transform t in CharacterMotor.instance.player.gameObject.transform)
         {
             if (t.name == "PikminPoint")

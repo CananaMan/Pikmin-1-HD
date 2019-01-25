@@ -8,7 +8,7 @@ public class OlimarCam : MonoBehaviour {
 	public float inputRotationSensitivity = 0.025f; // the lower this value, the less we can rotate the camera with the right thumbstick.
 	// References
 	[SerializeField]
-	Transform myTarget;
+	Transform myTarget = null;
 	// Properties
 	private int currentDistanceIndex; // CLICK the right thumbstick to cycle through camera distances.
 	private float FOV;
