@@ -7,6 +7,14 @@ public class pikminAI : MonoBehaviour {
     public bool isWithPlayer = false;
     public bool isFlower = true;
 
+    #region Singleton
+    public static pikminAI instance;
+    void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+
     Transform playerT;
     NavMeshAgent agent;
 	// Use this for initialization

@@ -5,25 +5,7 @@ using UnityEngine;
 public class PikminManager : MonoBehaviour {
     #region Singleton
     public static PikminManager instance;
-
     void Awake()
-    {
-        instance = this;
-        manager = this.gameObject;
-    }
-    #endregion
-    public List<GameObject> pikminInSquad;// how many pikmin are in squad
-    public GameObject[] PikminArrangementObjects; // what objects the pikmin go towards (there should only be 2)
-
-    [HideInInspector]
-    public GameObject manager;
-
-    private Transform PikminPoint;
-
-    bool oneTime = false; // temp var
-
-    // Use this for initialization
-    void Start()
     {
         foreach (Transform t in CharacterMotor.instance.player.gameObject.transform)
         {
@@ -35,6 +17,29 @@ public class PikminManager : MonoBehaviour {
         }
         PikminPoint.transform.position = PikminArrangementObjects[0].transform.position;
         InvokeRepeating("checkPikCount", .1f, .1f);
+        instance = this;
+        manager = this.gameObject;
+    }
+    #endregion
+    public List<GameObject> pikminInSquad;// how many pikmin are in squad
+    public GameObject[] PikminArrangementObjects; // what objects the pikmin go towards (there should only be 2)
+    [HideInInspector]
+    public GameObject manager;
+    private pikminAI pai;
+    private pikminDetect paid;
+
+    private Transform PikminPoint;
+    bool oneTime = false; // temp var
+
+    void Start()
+    {
+        pai = pikminAI.instance;
+        paid = pikminDetect.instance;
+    }
+
+    void FixedUpdate()
+    {
+        disbandPikiBand();
     }
 
     void checkPikCount()
@@ -47,6 +52,19 @@ public class PikminManager : MonoBehaviour {
         if (pikminInSquad.Count <= 49)
         {
             oneTime = false;
+        }
+    }
+
+    void disbandPikiBand()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            for (int i = 0; i < pikminInSquad.Count; i++)
+            {
+                pikminInSquad[i].gameObject.GetComponent<pikminAI>().isWithPlayer = false;
+            }
+            paid.pikminCount = 0;
+            pikminInSquad.Clear();
         }
     }
 }

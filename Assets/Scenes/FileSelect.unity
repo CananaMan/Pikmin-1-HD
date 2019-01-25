@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -605,7 +605,8 @@ MonoBehaviour:
   - {fileID: 1866993582}
   - {fileID: 2062732026}
   canvas: {fileID: 56912884}
-  skipMovie: 0
+  fadeObject: {fileID: 1281385947}
+  skipMovie: 1
 --- !u!224 &1048195640
 RectTransform:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class FileSelectController : MonoBehaviour {
 
     public Button[] buttons;
     public GameObject canvas;
+    public GameObject fadeObject;
     public bool skipMovie;
     private Animator anim;
     private bool loadingLevel;
@@ -36,7 +37,7 @@ public class FileSelectController : MonoBehaviour {
         buttons[1].onClick.RemoveAllListeners(); // ^^
         buttons[2].onClick.RemoveAllListeners(); // ^^
         yield return new WaitForSeconds(.5f); // wait for animation to play 
-        FadeCamera.instance.FadeOut(); // fade out
+        fadeObject.GetComponent<FadeCamera>().FadeOut(); // fade out
         yield return new WaitForSeconds(1f); // wait until faded to black
         if (skipMovie)
         {

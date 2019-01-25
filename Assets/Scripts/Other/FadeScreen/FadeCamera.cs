@@ -1,29 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[ExecuteInEditMode]
 public class FadeCamera : MonoBehaviour
 {
-    #region Singleton
-    public static FadeCamera instance;
-
-    void Awake()
-    {
-        material = new Material(Shader.Find("Hidden/FadeCameraShader"));
-        instance = this;
-    }
-    #endregion
 
     [Range (0f, 1f)]
 	public float opacity = 1;
 	public Color color = Color.black;
 
-	private Material material;
+	public Material material;
 	private float startTime = 0;
 	private float startOpacity = 1;
 	private int endOpacity = 1;
 	private float duration = 0;
 	private bool isFading = false;
+
+    void Start()
+    {
+        material = new Material(Shader.Find("Hidden/FadeCameraShader"));
+    }
 
 	public void FadeIn (float duration = 1)
 	{
