@@ -17,6 +17,7 @@ public class DayManager : MonoBehaviour
         thisAudio = this.GetComponent<AudioSource>();
         //Debug.Log ("The position of the day object is:" + dayPos.ToString ());
         InvokeRepeating("secondTick", .1f, 1); // repeat this 0.1 seconds after every 1 second.
+        Camera.main.gameObject.GetComponent<FadeCamera>().FadeIn();
     }
 
     void secondTick()
@@ -89,9 +90,9 @@ public class DayManager : MonoBehaviour
         thisAudio.Play();
         thisAudio.loop = true;
         float t = 0.0f;
-        while (t < 1)
+        while (t < .5f)
         {
-            t += 0.009f;
+            t += 0.0005f;
             thisAudio.volume = t;
             yield return new WaitForSeconds(0);
         }

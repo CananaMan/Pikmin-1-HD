@@ -3,9 +3,17 @@ using System.Collections;
 
 public class FadeCamera : MonoBehaviour
 {
+    #region Singleton
+    public static FadeCamera instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
+    #endregion
 
     [Range (0f, 1f)]
-	public float opacity = 1;
+	public float opacity = 0;
 	public Color color = Color.black;
 
 	public Material material;
@@ -20,7 +28,7 @@ public class FadeCamera : MonoBehaviour
         material = new Material(Shader.Find("Hidden/FadeCameraShader"));
     }
 
-	public void FadeIn (float duration = 1)
+	public void FadeIn (float duration = 3)
 	{
 		this.duration = duration;
 		this.startTime = Time.time;
@@ -29,7 +37,7 @@ public class FadeCamera : MonoBehaviour
 		this.isFading = true;
 	}
 
-    public void FadeOut(float duration = 1)
+    public void FadeOut(float duration = 3)
     {
         this.duration = duration;
         this.startTime = Time.time;
