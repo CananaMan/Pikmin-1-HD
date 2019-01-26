@@ -11,6 +11,7 @@ and made proper light maps.
 Made shadow animations for the impact site,
 started Pikmin testing again,
 added basic disbanding,
+added basic olimar animations (look i know they're bad),
 finally removed third party assets and Neo's original project 'Pikmine',
 removed a bunch of unnecessary stuff,
 started doing the "P i k m i n" map,
