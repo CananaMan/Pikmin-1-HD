@@ -24,10 +24,16 @@ public partial class PlatformInputController : MonoBehaviour
 {
     public bool autoRotate;
     public float maxRotationSpeed;
+    private Animator anim;
     private CharacterMotor motor;
     public virtual void Awake()
     {
         this.motor = (CharacterMotor) this.GetComponent(typeof(CharacterMotor));
+    }
+
+    void Start()
+    {
+        anim = this.GetComponent<Animator>();
     }
 
     public virtual void Update()
@@ -35,11 +41,16 @@ public partial class PlatformInputController : MonoBehaviour
         Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         if (directionVector != Vector3.zero)
         {
+            anim.SetBool("isWalking", true);
             float directionLength = directionVector.magnitude;
             directionVector = directionVector / directionLength;
             directionLength = Mathf.Min(1, directionLength);
             directionLength = directionLength * directionLength;
             directionVector = directionVector * directionLength;
+        }
+        if (directionVector == Vector3.zero)
+        {
+            anim.SetBool("isWalking", false);
         }
         directionVector = Camera.main.transform.rotation * directionVector;
         Quaternion camToCharacterSpace = Quaternion.FromToRotation(-Camera.main.transform.forward, this.transform.up);

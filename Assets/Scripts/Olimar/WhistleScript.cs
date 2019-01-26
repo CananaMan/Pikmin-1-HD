@@ -9,7 +9,6 @@ public class WhistleScript : MonoBehaviour
 	public float expandSpeed = 0.05f; // the expansion speed of the whistle.
 	public float moveSpeed = 1f; // the move speed of the whistle. Lower Values are slower, higher values are faster.
 	public float whistleRotationSpeed = 45f; // the rotation speed of the whistle particles.
-	public GameObject whistleParticles; // the particles of the whistle.
     // References
     private CharacterMotor player;
 	//private ParticleSystem whistleParticleSys; // the particle system of the whistle.
@@ -31,9 +30,7 @@ public class WhistleScript : MonoBehaviour
 
         if (GameObject.Find("Player") == null)
             player = GameObject.Find("Olimar").GetComponent<CharacterMotor>();
-        
-        //Neos particle stuff
-        //whistleParticleSys = GetComponentInChildren<ParticleSystem> ();
+       
         //Finding the whistle gameobjects.
         for (int i = 0; i < this.transform.childCount; i++)
         {
@@ -73,7 +70,6 @@ public class WhistleScript : MonoBehaviour
         Rotate();
         MoveFromInput();
         UpdateBlow();
-        //whistleParticleSys.transform.Rotate (new Vector3(0,0,45));
     }
 
     void Rotate()
@@ -139,17 +135,12 @@ public class WhistleScript : MonoBehaviour
             float bodyScale = diameter; // Note: We're loading in the sprite in a way for its scale to match its actual size in Unity units.
             whistleBodySprite.transform.localScale = new Vector3(bodyScale, bodyScale, bodyScale);
             whistleBodySprite.GetComponent<CapsuleCollider>().enabled = true;
-            //Debug.Log("enabled");
         }
 
         if (!isOn)
         {
             whistleBodySprite.GetComponent<CapsuleCollider>().enabled = false;
-            //Debug.Log("disabled");
         }
-        //		if (isOn) {
-        //			spriteRenderer.sprite = 
-        //		}
     }
 }
 

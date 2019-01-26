@@ -47,6 +47,11 @@ public class pikminAI : MonoBehaviour {
         {
             if (isFlower)
             {
+                agent.acceleration = 18;
+                agent.speed = 16;
+            }
+            if (!isFlower)
+            {
                 agent.acceleration = 16;
                 agent.speed = 14;
             }

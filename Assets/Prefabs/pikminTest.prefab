@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2969918539280757856}
   - component: {fileID: 2969918539280757787}
   - component: {fileID: 2969918539280757857}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pikminTest
   m_TagString: Pikmin
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fce8f7679074d3349ad5fb7a5a9c04d1, type: 2}
+  - {fileID: 2100000, guid: bd1bb6dc81ed81b46a9d367e915ef99a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,7 +95,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWithPlayer: 0
-  isFlower: 1
+  isFlower: 0
+  playerT: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!195 &2969918539280757863
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -105,7 +107,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2969918539280757785}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.6
+  m_Radius: 0.5
   m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 99
@@ -114,7 +116,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.5
+  m_Height: 2
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -133,7 +135,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!136 &2969918539280757787
 CapsuleCollider:
   m_ObjectHideFlags: 0

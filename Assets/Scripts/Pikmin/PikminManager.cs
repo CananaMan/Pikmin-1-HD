@@ -34,7 +34,7 @@ public class PikminManager : MonoBehaviour {
         }
         PikminPoint.transform.position = PikminArrangementObjects[0].transform.position;
         paid = pikminDetect.instance;
-        InvokeRepeating("checkPikCount", .1f, .1f);
+        InvokeRepeating("checkPikCount", .3f, .3f);
     }
 
     void FixedUpdate()
@@ -52,14 +52,19 @@ public class PikminManager : MonoBehaviour {
 
     void checkPikCount()
     {
-        if (pikminInSquad.Count >= 50 && !oneTime)
+        if (pikminInSquad.Count <= 25)
+        {
+            PikminPoint.transform.position = PikminArrangementObjects[0].transform.position;
+        }
+        if (pikminInSquad.Count <= 49 && pikminInSquad.Count >= 26)
         {
             PikminPoint.transform.position = PikminArrangementObjects[1].transform.position;
-            oneTime = true;
-        }
-        if (pikminInSquad.Count <= 49)
-        {
             oneTime = false;
+        }
+        if (pikminInSquad.Count >= 50 && !oneTime)
+        {
+            PikminPoint.transform.position = PikminArrangementObjects[2].transform.position;
+            oneTime = true;
         }
     }
 }
