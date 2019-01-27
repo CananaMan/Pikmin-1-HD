@@ -9,13 +9,16 @@ public class FileSelectController : MonoBehaviour {
 
     public Button[] buttons;
     public GameObject canvas;
+    public GameObject loading;
     public GameObject fadeObject;
     public bool skipMovie;
-    private Animator anim;
-    private bool loadingLevel;
+    Animator anim;
+    bool loadingLevel;
+    AsyncOperation asyncLoad;
 
     void Start()
     {
+        loading.SetActive(false);
         buttons[0].onClick.AddListener(delegate { whenClicked(buttons, 0); });
         buttons[1].onClick.AddListener(delegate { whenClicked(buttons, 1); });
         buttons[2].onClick.AddListener(delegate { whenClicked(buttons, 2); });
@@ -37,14 +40,14 @@ public class FileSelectController : MonoBehaviour {
         buttons[1].onClick.RemoveAllListeners(); // ^^
         buttons[2].onClick.RemoveAllListeners(); // ^^
         yield return new WaitForSeconds(.5f); // wait for animation to play 
-        fadeObject.GetComponent<FadeCamera>().FadeOut(); // fade out
-        yield return new WaitForSeconds(1f); // wait until faded to black
         if (skipMovie)
         {
             StartCoroutine(LoadImpactSite());
         }
         else
         {
+            fadeObject.GetComponent<FadeCamera>().FadeOut(); // fade out
+            yield return new WaitForSeconds(1f); // wait until faded to black
             canvas.SetActive(false);
             //add start movie functionality here :D
         }
@@ -52,12 +55,22 @@ public class FileSelectController : MonoBehaviour {
 
     IEnumerator LoadImpactSite()
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Scenes/ImpactSite");
+        fadeObject.GetComponent<FadeCamera>().FadeOut(); // fade out
+        yield return new WaitForSeconds(3f); // wait for this many seconds
+        StartCoroutine(loadScene()); // start loading cutscene
+        yield return new WaitForSeconds(1);
+        GameObject.Destroy(canvas.gameObject); // destroy old canvas
+        loading.SetActive(true); // activate text
+        fadeObject.GetComponent<FadeCamera>().FadeIn(); // fade in
+        yield return new WaitForSeconds(4);
+        asyncLoad.allowSceneActivation = true; // allow loading into scene!
+    }
 
-        // Wait until the asynchronous scene fully loads
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
+    IEnumerator loadScene()
+    {
+        Debug.LogWarning("SCENE LOAD START ! ! ! !"); // does a warning stating that the scene loading has started
+        asyncLoad = SceneManager.LoadSceneAsync("Scenes/ImpactSite/ImpactSite"); // load this scene from the scene index
+        asyncLoad.allowSceneActivation = false; // dont let it load straight into it
+        yield return asyncLoad; // dunno what this does lol
     }
 }

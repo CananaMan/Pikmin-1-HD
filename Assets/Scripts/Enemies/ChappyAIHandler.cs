@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
-
+[RequireComponent(typeof(NavMeshAgent))]
 public class ChappyAIHandler : MonoBehaviour {
 
     // Settables

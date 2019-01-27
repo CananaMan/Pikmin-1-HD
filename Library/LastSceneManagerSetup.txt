@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ImpactSite.unity
+- path: Assets/Scenes/ImpactSite/ImpactSite.unity
   isLoaded: 1
   isActive: 1
