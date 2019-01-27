@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FileSelect.unity
     guid: c9d3c1e90c95a4847bc263545e8ce453
   - enabled: 1
-    path: Assets/Scenes/ImpactSite.unity
+    path: Assets/Scenes/ImpactSite/ImpactSite.unity
     guid: 0a642345c4f67244ab5ffd7a7039ce52
   m_configObjects: {}

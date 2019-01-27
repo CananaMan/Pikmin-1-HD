@@ -69,6 +69,7 @@ MonoBehaviour:
   PikminArrangementObjects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   manager: {fileID: 0}
 --- !u!82 &2157096213448997121
 AudioSource:
