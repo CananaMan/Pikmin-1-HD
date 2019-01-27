@@ -38,6 +38,12 @@ public class OlimarCam : MonoBehaviour {
 		if (Input.GetButtonDown("Right Stick Click")) {
 			SetCurrentDistanceIndex(currentDistanceIndex + 1);
 		}
+	
+        if (Input.GetKeyDown(KeyCode.E))
+	{
+	    targetPosition = transform.TransformPoint(Vector3.up * distanceUp - Vector3.back * distanceAway);
+		//Target to move the camera to = behind the player in local space! :D
+	}
         if (Input.GetKeyDown(KeyCode.P))
         {
             StartCoroutine(txt.GetComponent<textBox>().ShowText());
